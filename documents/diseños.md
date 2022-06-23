@@ -1,11 +1,8 @@
 # Diseños
 
-Home link figma:
-Detalle del producto (tienda) link figma:
-carrito de compras link figma:
-formulario registro link figma:
-formulario log in link figma:}
-
+Logo Link Google Drive:
+Tipografia Link Google Drive:
+Paleta de Colores Link Google Drive:
 
 
 + [**Volver**](../README.md)
