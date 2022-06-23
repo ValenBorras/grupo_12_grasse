@@ -1,6 +1,6 @@
 # grupo_12_grasse
 
-+ [./documents/tematica.md](**Tematica**)
-+ [./documents/equipo.md](**Equipo**)
-+ [./documents/referentes.md](**Referentes**)
-+ [./documents/diseños.md](**Diseños**)
++ [**Tematica**](./documents/tematica.md)
++ [**Equipo**](./documents/equipo.md)
++ [**Referentes**](./documents/referentes.md)
++ [**Diseños**](./documents/diseños.md)
