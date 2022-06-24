@@ -1,4 +1,4 @@
-# grupo_12_grasse
+# Grupo 12 Grasse
 
 + [**Tematica**](./documents/tematica.md)
 + [**Equipo**](./documents/equipo.md)
