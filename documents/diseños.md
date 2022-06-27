@@ -4,7 +4,7 @@
 **Tipografia Link Google Drive:** https://drive.google.com/drive/folders/1YUt4bNkLbbs2lAxqFUZXfozCDNAVvZaP?usp=sharing
 **Paleta de Colores Link Google Drive:** https://drive.google.com/drive/folders/1N91Vjn6EMZ9NnCwtQmnTdNKx9mUKR3ce?usp=sharing
 
-**Bocetos:**
+# Bocetos:
 
 **Home:** https://drive.google.com/file/d/1ZlHb3ElqyiBHW6gzYYgrEHPgM02MrCaB/view?usp=sharing
 **Detalle de Producto:**
