@@ -6,7 +6,7 @@
 
 # Bocetos:
 
-**Home:** https://drive.google.com/file/d/1ZlHb3ElqyiBHW6gzYYgrEHPgM02MrCaB/view?usp=sharing
+**Home:** https://drive.google.com/file/d/1qPs87NWBX7zwHQ1bah6Awr2ayw0bUA0q/view?usp=sharing
 **Detalle de Producto:**
 **Carrito de Compras:**
 **Formulario de Registro:**
