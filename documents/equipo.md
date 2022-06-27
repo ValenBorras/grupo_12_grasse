@@ -12,6 +12,6 @@
  > 
 
 + **Esteban:**
- > 
+ > Hola! mi nombre es Esteban Molina, tengo 23 años y soy de Envigado,Colombia. Estudio administración financiera, tengo diplomado en liderazgo y ahora me encuentro estudiando esto por gusto y buscando un buen futuro, dedico mi tiempo a estudiar, trabajar y a mi emprendimiento.
 
 + [**Volver**](../README.md)
