@@ -10,7 +10,7 @@ y fidelización.
 Nuestro público objetivo son principalmente mujeres entre los 22 y 40 años de edad, ubicadas en cualquier país,
 que se preocupen por su aspecto físico y disfruten de perfumeria fina.
 
-¿Cómo ajustaremos nuestra oferta a ese público? (falta)
+¿Cómo ajustaremos nuestra oferta a ese público? **(¡¡FALTA!!)**
 
 Nos dedicamos a reafirmar tu identidad a través de nuestros productos de perfumeria fina, dentro de nuestro 
 portafolio de productos actual:
