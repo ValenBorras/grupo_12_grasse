@@ -6,12 +6,12 @@
 
 # Bocetos:
 
-**Home:** https://drive.google.com/file/d/1qPs87NWBX7zwHQ1bah6Awr2ayw0bUA0q/view?usp=sharing
-**Tienda:** https://drive.google.com/file/d/1kCxmVwjaK_S2Kf_Mfb4Dd4lwiyOiEE6A/view?usp=sharing
-**Detalle de Producto:** 
-**Carrito de Compras:** https://drive.google.com/file/d/1aQ3bUvkdjfxr-fXbRkoQfpobwWmhsXSJ/view?usp=sharing
-**Formulario de Registro:** 
-**Formulario de Login:**
+**Home:** https://drive.google.com/file/d/1Cwcx7KcITRL5NZmZVOBW1fYxFJ5d7Pk7/view?usp=sharing
+**Tienda:** https://drive.google.com/file/d/1L60fIV1s62ALBXMkrG2BcgWw3gUPalh6/view?usp=sharing
+**Detalle de Producto:** https://drive.google.com/file/d/1m-UJwf5Tq6e859i-QgPe7spyfGMvOsWy/view?usp=sharing
+**Carrito de Compras:** https://drive.google.com/file/d/1T35i0ABRFRB4RnmTvMvzRUW9uU4Wxg-8/view?usp=sharing
+**Formulario de Registro:** https://drive.google.com/file/d/1_llK3AlwvD0P1R8dARN-zsNVLdxMEUhS/view?usp=sharing
+**Formulario de Login:** https://drive.google.com/file/d/1K2M14xTx_nV73bzC_Rqh--jGmk6l0jlG/view?usp=sharing
 
 
 + [**Volver**](../README.md)
