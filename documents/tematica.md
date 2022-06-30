@@ -15,7 +15,7 @@ que se preocupen por su aspecto físico y disfruten de perfumeria fina.
 Nos dedicamos a reafirmar tu identidad a través de nuestros productos de perfumeria fina, dentro de nuestro 
 portafolio de productos actual:
 
-1. **Perfumes:
+1. **Perfumes:**
 - Se asemejan 95% a los originales.
 - Mayor fijación y duración.
 - Más de 400 fragancias disponibles.
