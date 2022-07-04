@@ -6,7 +6,9 @@
 + **Publico Objetivo**
 >Nuestro público objetivo son principalmente mujeres entre los 22 y 40 años de edad, ubicadas en cualquier país, que se preocupen por su aspecto físico y disfruten de perfumeria fina.
 
-¿Cómo ajustaremos nuestra oferta a ese público? **(¡¡FALTA!!)**
+¿Cómo ajustaremos nuestra oferta a ese público? 
+**La oferta para este público se ajustará ofreciéndole al consumidor la opción de personalización desde el mismo momento en el que realiza tu pedido ofreciéndole  un catálogo dentro del cual podrá escoger su fragancia preferida, El estilo visual de la página deberá ser muy Dinámico con el fin de captar la atención del público juvenil y del mismo modo  deberá articularse  con contenidos subidos a las plataformas de redes sociales para  generar expectativa y atraer la atención del público Target 
+**
 
 + **Productos**
 Nos dedicamos a reafirmar tu identidad a través de nuestros productos de perfumeria fina, dentro de nuestro 
