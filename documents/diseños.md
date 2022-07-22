@@ -1,7 +1,8 @@
 # Diseños:
 
 + [**Logos**](https://drive.google.com/drive/folders/14CZmr4sG6pn6f0ia5XPr0_80bvV3KvSu?usp=sharing)
-+ [**Tipografia Drive**](https://drive.google.com/drive/folders/1YUt4bNkLbbs2lAxqFUZXfozCDNAVvZaP?usp=sharing) [**Tipografia alternativa Google Fonts**](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
++ [**Tipografia Drive**](https://drive.google.com/drive/folders/1YUt4bNkLbbs2lAxqFUZXfozCDNAVvZaP?usp=sharing) 
++ [**Tipografia alternativa Google Fonts**](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
 + [**Paleta de Colores**](https://drive.google.com/drive/folders/1N91Vjn6EMZ9NnCwtQmnTdNKx9mUKR3ce?usp=sharing)
 
 # Bocetos:
