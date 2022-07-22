@@ -1,0 +1,24 @@
+{
+  "name": "grupo_12_grasse",
+  "version": "1.0.0",
+  "description": "+ [**Tematica**](./documents/tematica.md)\r + [**Equipo**](./documents/equipo.md)\r + [**Referentes**](./documents/referentes.md)\r + [**Diseños**](./documents/diseños.md)\r + [**Wireframes**](./documents/wireframes.md)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValenBorras/grupo_12_grasse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValenBorras/grupo_12_grasse/issues"
+  },
+  "homepage": "https://github.com/ValenBorras/grupo_12_grasse#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

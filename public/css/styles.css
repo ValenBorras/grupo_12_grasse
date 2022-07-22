@@ -1,0 +1,17 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(forms.css);
+@import url(normalize.css);
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
