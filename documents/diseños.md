@@ -7,7 +7,7 @@
 
 # Bocetos:
 
-+ [**Home**](/bocetos/Prototipo_home_Grasse)
++ [**Home**](https://drive.google.com/file/d/1Cwcx7KcITRL5NZmZVOBW1fYxFJ5d7Pk7/view?usp=sharing)
 + [**Tienda**](https://drive.google.com/file/d/1L60fIV1s62ALBXMkrG2BcgWw3gUPalh6/view?usp=sharing)
 + [**Detalle de Producto**](https://drive.google.com/file/d/1m-UJwf5Tq6e859i-QgPe7spyfGMvOsWy/view?usp=sharing)
 + [**Carrito de Compras**](https://drive.google.com/file/d/1T35i0ABRFRB4RnmTvMvzRUW9uU4Wxg-8/view?usp=sharing)
