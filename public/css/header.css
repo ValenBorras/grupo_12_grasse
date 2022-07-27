@@ -51,10 +51,9 @@ header {
     justify-content: space-between;
     background-color:#A87F70;
     padding: 1.5rem 1rem;
-    position: fixed !important;
-    top: 0 !important;
-    z-index: 1500;
-    width: 100%;
+    position:sticky;
+    top:0px;
+    z-index: 2;
 }
 
 .logo{
@@ -196,9 +195,9 @@ header {
         text-decoration: none;
         gap: 3rem;
         width: 100vw;
-        position: fixed !important;
-        top: 0 !important;
-        z-index: 1500;
+        position:sticky;
+        top:0px;
+        z-index: 2;
     }
 
     .site {
