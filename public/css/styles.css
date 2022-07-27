@@ -9,9 +9,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    border: none;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: #FFF;
+    width: 100vw;
+    background-image: url(/images/Fondo.png);
 }
 

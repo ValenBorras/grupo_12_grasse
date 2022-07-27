@@ -9,86 +9,199 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Home Grasse</title>
+    <title>Grasse - Fragancia en crema</title>
 </head>
-<body>
-    <header>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#tienda">Tienda</a></li>
-            <li><img src="/images/Logo_GrasseBlanco.png" alt="Logo Grasse"></li>
-            <li><a href=""></a>Contacto</li>
-            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-            <li><a href="" rel="Log In"><i class="fa-solid fa-user"></i></a></li>
-            <li><a href="" rel="Register"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-        </ul>
-    </header>
-    <main>
-        <section class="banner">
-            <img src="/images/banner-manos.png" alt="bannerManos">
-            <article class="copy-banner">
-                <h2>Conectate con tu magia tropical</h2>
-                <p>(descubre como, con nuestros exoticos productos)</p>
-                <a href="#tienda">Ver Tienda</a>
-            </article>
-            <article class="copy-separador">
-                Reafirmamos tu identidad a traves de nuestros productos con fragancias de perfumeria comercial. 
-            </article>
-        </section>
-        <section class="desc-perfumes">
-            <p> Perfumes de alta duracion</p>
-            <li>mas de 200 referencias</li>
-            <a href="#tienda">ver tienda</a>
-            <img src="" alt="perfumes">
-        </section>
-        <section class="welcome">
-            <h2>¡Bienvenido!</h2>
-            <img src="/images/crueltyFree.png" alt="crueltyFree">
-        </section>
-        <section class="tienda" id="tienda">
-            <nav class="navbarTienda">
-                <ul>
-                    <li>Perfumes</li>
-                </ul>
+    <body>
+
+        <header>
+
+            <h3 class="encabezado">¿Primera Compra? Recibe el <b>ENVIO GRATIS</b> <i class="fa-solid fa-truck-fast"></i> por compras en la plataforma con el cupón: <b>BIENVENIDO</b> <i class="fa-solid fa-heart"></i></h3>
+            
+            <nav class="barra-inicio-mobile">
+
+                <section class="menu-block">
+                    <div class="burger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </section>
+               
+                <div class="logo-block-mobile">
+                    <img class="logo" src="/images/logo-grasse-blanco.png" alt="">
+                </div>
+
+                <section class="carrito">
+                    <i class="fa-solid fa-circle"></i>
+                    <a href=""><i class="fa-solid fa-bag-shopping"></i></a>  
+                </section>
             </nav>
-            <article class="producto">
-                <img src="" alt="perfumeChico">
-                <div class="caja-descripcion">
-                    <p> Perfumes Grasse 85ml</p>
-                    <p> $20.000</p>
+
+            <nav class="barra-inicio">
+
+                <form class="busqueda"> 
+                    <label for="barra-busqueda"></label>
+                    <input class="barra-busqueda" type="text" placeholder="">
+                </form>
+
+                <ul class="site">
+
+                    <li><a href="">HOME </a></li> 
+                    <li><a href="">TIENDA</a></li> 
+                    <li><a href="">TESTIMONIOS</a></li>  
+
+                    <div class="logo-block">
+                    <li><img class="logo" src="/images/logo-grasse-blanco.png" alt=""></li>
+                    </div>
+
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="">PQRS</a></li>
+
+                </ul>
+
+            
+                <ul class="login-navbar">
+
+                    <li><a href=""><i class="fa-regular fa-heart"></i> <i class="fa-solid fa-circle"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i> <i class="fa-solid fa-circle"></i></a></li> 
+                    <li><a href=""><i class="fa-regular fa-user"></i></a></li> 
+                </ul>
+
+            </nav>  
+            
+            <section class="contenedor">
+                <img class="banner" src="/images/banner.png" alt="">
+                <div class="bloque-texto">
+                <p class="animation">
+                    REAFIRMAMOS TÚ IDENTIDAD A TRAVÉS DE NUESTROS PRODUCTOS CON FRAGANCIAS DE PERFUMERÍA COMERCIAL  -  MÁS DE 300 REFERENCIAS DISPONIBLES.
+                </p>
+
+                
                 </div>
+            </section>
+        </header>
+
+        <main>
+
+            <article class="pre-menu">
+                
+                <section class="cremas">
+                    
+                    <div class="texto">
+
+                        <h3>Cremas Hidratantes y Nutritivas con Fragancia de Perfume</h3>
+                        
+                        <p>*Más de 200 referencias.</p>
+
+                        <a href="">VER TIENDA</a>
+
+                    </div>
+
+                    <div class="imagenes">
+                        <img class="productos"src="/images/conjunto-cremas.png" alt="">
+                    </div>
+
+                </section>
+
+                <section class="perfumes">
+
+                    <div class="texto">
+
+                        <h3>Perfumes de Alta Duración</h3>
+                        
+                        <p>*Más de 200 referencias.</p>
+
+                        <a href="">VER TIENDA</a>
+
+                    </div>
+
+                    <div class="imagenes">
+                        <img class="productos"src="/images/conjunto-perfumes.png" alt="">
+                    </div>
+
+                </section>
             </article>
-            <article class="producto">
-                <img src="" alt="perfumeGrande">
-                <div class="caja-descripcion">
-                    <p> Perfumes Grasse 280ml</p>
-                    <p> $40.000</p>
-                </div>
+
+            <article class="middle-menu">
+
+                <h2>¡Bienvenido!</h2>
+                <img class="cruelty-free"src="/images/cruelty-free.png" alt="">
+
             </article>
-            <article class="photos">
-                <img src="" alt="img1">
-                <img src="" alt="img2">
+
+            <article class="testimonio">
+                <section>
+                   
+                    <div class="barra-testimonio">
+                       <a href="">TESTIMONIOS</a> 
+                    </div>
+
+                    <div class="imagenes-testimonios">
+                        <img class="turquia" src="/images/turquia-sara.png" alt="">
+                        <img class="egipto" src="/images/egipto-valentina.png" alt="">
+                    </div>
+
+                    <div class="bloque-texto">
+
+                        <p class="animation">
+                            REAFIRMAMOS TÚ IDENTIDAD A TRAVÉS DE NUESTROS PRODUCTOS CON FRAGANCIAS DE PERFUMERÍA COMERCIAL  -  MÁS DE 300 REFERENCIAS DISPONIBLES.
+                        </p>
+
+                    </div>
+                </section>
             </article>
-            <article class="copy-separador">
-                Reafirmamos tu identidad a traves de nuestros productos con fragancias de perfumeria comercial.
+
+        </main>
+
+        <footer>
+
+            <article class="distribuidor">
+                
+                <section class="info-distribuidor">
+
+                    <h4>¿Quieres ser distribuidor (a) Grasse?</h4>
+                    <p class="p-distribuidor">
+                        En Grasse estamos buscando los mejores aliados para establecer una red fuerte de representación de ventas a nivel nacional e internacional y queremos conocerte.
+                    </p>
+
+                    <p class="p-distribuidor">
+                        Estamos comprometidos con entregar más y mejores experiencias de bienestar y cuidado a nuestros clientes, y sabemos que podemos cumplir mejor esta misión de la mano de ustedes!
+                    </p>
+
+                    <p class="p-distribuidor">
+                        Dejanos tus datos, nuestro equipo revisará y se pondra en contacto contigo.
+                    </p>
+
+                </section>
+
             </article>
-        </section>
-    </main>
-    <footer>
-        <section class="footer-main-section">
-            <article class="footer-section">
-                <h3></h3>
-                <p></p>
+
+            <article class="formulario">
+                <form action="/" method="post">
+                    <p>
+                        <label for="nombre">¿Como te llamas?*</label>
+                        <input class="b" type="text" name="nombre" id="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="numero">Numero de contacto*</label>
+                        <input class="b" type="tel" name="numero" id="numero" required>
+                    </p>
+
+                    <div class="enviar-block">
+                        <button class="enviar" type="submit">Enviar</button>
+                    </div>
+
+                </form>
+
             </article>
-            <article class="footer-section">
-                <h3></h3>
-                <p></p>
+
+            <article class="block-footer">
+                <div class="left-block"></div>
+                <img class="flor" src="/images/isotipo-recortado.png" alt="">
+                <div class="right-block"></div>
             </article>
-            <article class="footer-section">
-                <h3></h3>
-                <p></p>
-            </article>
-        </section>
-    </footer>    
-</body>
+
+
+        </footer>
+    </body>
 </html>
