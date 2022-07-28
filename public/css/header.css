@@ -109,7 +109,6 @@ header {
     background-color: #A87F70;
     overflow-x: hidden;
     overflow-y: hidden;
-
 }
 
 .animation {
@@ -117,12 +116,13 @@ header {
     color:white;
     text-align: center;
     /*movimiento*/
-    animation-duration: 60s;
+    animation-duration: 30s;
     animation-name: slidein;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    white-space:nowrap;
 }
 
 /*movimiento*/
@@ -156,6 +156,7 @@ header {
 
     .animation {
         font-size: 12px;
+        animation-duration: 45s;
     }
 
     .encabezado{
@@ -275,6 +276,7 @@ header {
 
     .animation {
         font-size: 14px;
+        animation-duration: 60s;
     }
 
     .bloque-texto {
