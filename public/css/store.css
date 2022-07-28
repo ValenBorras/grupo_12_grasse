@@ -1,3 +1,191 @@
 
 
 
+.encabezado-tienda {
+    color:#A87F70;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    align-items: center;
+}
+
+.arrow {
+    display:flex;
+    width: 33vw;
+    font-size: 27px;
+}
+
+.title-tienda {
+    display:flex;
+    width: 33vw;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.bloque-vacio {
+    display:flex;
+    width: 33vw;
+}
+
+
+.tienda {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes {
+    width: 20vw;
+}
+
+.imagen-perfume100 {
+    width:28vw ;
+}
+
+.imagen-perfume50 {
+    width: 22vw;
+}
+
+.caja-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1ECE1;
+    width: 50vw;
+    height: 50vw;
+    padding:2rem;
+    padding-bottom: 1rem;
+    border-top-left-radius:1rem;
+    border-top-right-radius:1rem;
+}
+
+.caja-general {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    cursor:pointer;
+}
+
+.nombre-producto {
+    color:#A87F70;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+}
+
+.precio {
+    color:#A87F70;
+    font-size: 12px;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap:1rem;
+    padding:1rem;
+    border: 2px solid #F1ECE1;
+    background-color: white;
+}
+
+@media screen and (min-width:769px) {
+
+    .title-tienda {
+        font-size: 30px;
+    }
+
+    .arrow {
+        font-size: 33px;
+    }
+    
+    .tienda {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        min-width: auto;
+        justify-content: space-around;
+        padding: 5vw;
+        padding-top: 0vw;
+    }
+
+    .imagenes {
+        width: 17vw;
+    }
+            
+    .imagen-perfume100 {
+        width:25vw ;
+    }
+            
+    .imagen-perfume50 {
+        width: 19vw;
+    }
+
+    .caja-imagen {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .caja-general {
+        margin-bottom: 5vw;
+    }
+
+    .nombre-producto{
+        font-size: 16px;
+    }
+
+    .precio {
+        font-size: 14px;
+    }
+
+    .caja {
+        width: 40vw;
+        height: 12vw; 
+    }
+
+    
+
+}
+
+@media screen and (min-width:1279px) {
+
+    .title-tienda {
+        font-size: 30px;
+    }
+
+    .arrow {
+        font-size: 33px;
+    }
+    
+    .tienda {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        min-width: auto;
+        justify-content: space-around;
+    }
+
+    .caja-imagen {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .caja {
+        width: 20vw; 
+        height: 8vw;
+    }
+
+    .imagenes {
+        width: 8vw;
+    }
+    
+    .imagen-perfume100 {
+        width:12vw ;
+    }
+    
+    .imagen-perfume50 {
+        width: 9vw;
+    }
+
+}
