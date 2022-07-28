@@ -1,7 +1,7 @@
 
 
 
-.encabezado-tienda {
+#Tienda {
     color:#A87F70;
     display: flex;
     justify-content: space-around;
@@ -31,7 +31,7 @@
 }
 
 
-.tienda {
+.caja-tienda {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +70,10 @@
     cursor:pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nombre-producto {
     color:#A87F70;
     font-weight: 600;
@@ -94,7 +98,7 @@
 
 @media screen and (min-width:769px) {
 
-    .encabezado-tienda {
+    #Tienda {
         padding-bottom: 6rem;
     }
     
@@ -106,7 +110,7 @@
         font-size: 33px;
     }
     
-    .tienda {
+    .caja-tienda {
         display: grid;
         grid-template-columns: 40vw 40vw;
         min-width: auto;
@@ -149,13 +153,11 @@
         height: 12vw; 
     }
 
-    
-
 }
 
 @media screen and (min-width:1279px) {
 
-    .encabezado-tienda {
+    #Tienda {
         padding-bottom: 4rem;
     }
     
@@ -167,7 +169,7 @@
         font-size: 33px;
     }
     
-    .tienda {
+    .caja-tienda {
         display: grid;
         grid-template-columns: 20vw 20vw 20vw 20vw;
         min-width: auto;
