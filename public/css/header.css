@@ -123,6 +123,7 @@ header {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     white-space:nowrap;
+    letter-spacing: 1.5px;
 }
 
 /*movimiento*/
