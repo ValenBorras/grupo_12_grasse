@@ -1,10 +1,13 @@
+.footer {
+    margin-top: 20rem;
+}
+
 .distribuidor {
     margin-right: 5vw;
     margin-left: 5vw;
     border-top: 1px solid #A87F70;
     padding-top:5vw;
 }
-
 
 .info-distribuidor {
     display: flex;
@@ -105,7 +108,7 @@ h4 {
 }
 
 .wpp {
-    width: 70px;
+    width: 50px;
     position: fixed;
     right:20px;
     bottom: 20px;
@@ -150,6 +153,10 @@ h4 {
     .enviar {
         font-size: 14px;
     }
+
+    .wpp {
+        width: 60px;
+    }
 }
 
 @media screen and (min-width:1279px) {
@@ -189,5 +196,9 @@ h4 {
 
     .enviar {
         font-size: 16px;
+    }
+
+    .wpp {
+        width: 60px;
     }
 }

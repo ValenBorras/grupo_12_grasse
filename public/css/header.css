@@ -51,7 +51,8 @@ header {
     justify-content: space-between;
     background-color:#A87F70;
     padding: 1.5rem 1rem;
-    position: fixed;
+    position:sticky;
+    top:0px;
     z-index: 2;
 }
 
@@ -108,7 +109,6 @@ header {
     background-color: #A87F70;
     overflow-x: hidden;
     overflow-y: hidden;
-
 }
 
 .animation {
@@ -116,12 +116,14 @@ header {
     color:white;
     text-align: center;
     /*movimiento*/
-    animation-duration: 60s;
+    animation-duration: 30s;
     animation-name: slidein;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    white-space:nowrap;
+    letter-spacing: 1.5px;
 }
 
 /*movimiento*/
@@ -148,13 +150,14 @@ header {
 
     .bloque-texto {
         display: block;
-        height: 1.7rem;
+        height: 1.5rem;
         padding: 0.3rem 1rem; 
         background-color: #A87F70;
     }
 
     .animation {
         font-size: 12px;
+        animation-duration: 45s;
     }
 
     .encabezado{
@@ -194,7 +197,8 @@ header {
         text-decoration: none;
         gap: 3rem;
         width: 100vw;
-        position: fixed;
+        position:sticky;
+        top:0px;
         z-index: 2;
     }
 
@@ -273,6 +277,7 @@ header {
 
     .animation {
         font-size: 14px;
+        animation-duration: 60s;
     }
 
     .bloque-texto {
