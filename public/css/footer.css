@@ -107,11 +107,12 @@ h4 {
     border-top: 1px solid #A87F70;
 }
 
-.wpp {
-    width: 50px;
+.wpp i{
+    font-size: 80px;
     position: fixed;
     right:20px;
     bottom: 20px;
+    color: #A87F70;
 }
 
 @media screen and (min-width:769px) {

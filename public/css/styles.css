@@ -5,6 +5,8 @@
 @import url(normalize.css);
 @import url(store.css);
 @import url(cart.css);
+@import url(detail.css);
+
 
 
 *{
