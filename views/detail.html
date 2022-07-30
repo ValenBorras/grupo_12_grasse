@@ -15,9 +15,6 @@
 </head>
 <body>
     <header>
-
-        <h3 class="encabezado">¿Primera Compra? Recibe el <b>ENVIO GRATIS</b> <i class="fa-solid fa-truck-fast"></i> por compras en la plataforma con el cupón: <b>BIENVENIDO</b> <i class="fa-solid fa-heart"></i></h3>
-        
         <nav class="barra-inicio-mobile">
 
             <section class="menu-block">
@@ -73,40 +70,88 @@
     <main>
         <section class="detail-main-block">
             <section class="detail-section1">
-                <article class="prod-detail1">
+                <article class="prod-detail">
                     <img class="prod" src="/images/Crema-280gr.png" alt="">
                 </article>
-                <article class="prod-detail2">
+                <article class="prod-detail">
                     <img class="prod" src="/images/Crema-280gr.png" alt="">
                 </article>
-                <article class="prod-detail3">
+                <article class="prod-detail">
                     <img class="prod" src="/images/Crema-280gr.png" alt="">
                 </article>
             </section>
-            <section class="detail-section">
+            <section class="detail-section2">
                 <article class="main-prod-detail">
                     <img src="/images/Crema-280gr.png" alt="">
                 </article>
             </section>
             <section class="detail-section">
                 <div class="desc-block"> 
-                    <article class="desc-block-section">
-                        <h2>Crema Hidratante y Nutritiva Grasse 280g</h2>
+                <form action="/Detalle" method="POST" class="detail-form">
+                    <article class="desc-block-section1">
+                        <h2 class="detail-title">Crema Hidratante y Nutritiva Grasse 280g</h2>
                         <p>COP$40.000</p>
                     </article>
-                    <article class="desc-block-section">
-                        <h2>Marca: Grasse</h2>
-
+                    <article class="desc-block-section2">
+                        <div class="marca"><label for="marca">Marca: </label><input type="text" id="marca" name="detail" class="detail-input"></div>
+                        <div><label for="ref">Referencia: </label><input type="text" id="ref" name="detail" class="detail-input"></div>
                     </article>
-                    <article class="desc-block-section"></article>
-                    <article class="desc-block-section"></article>
+                    <article class="desc-block-sectionB">
+                       <a href="/"><button type="button" class="detail-button">Agregar al carrito</button></a> 
+                    </article>
+                    <article class="desc-block-section">
+                        <p class="copy-form"> Cuida tu piel y deja que los demas lo sientan </p>
+                        <p> Hecho en colombia </p>
+                    </article>
+                </form>
                 </div>
             </section>
         </section>
     </main>
     <footer>
+        <article class="distribuidor">
+                
+            <section class="info-distribuidor">
+
+                <h4>¿Quieres ser distribuidor (a) Grasse?</h4>
+                <p class="p-distribuidor">
+                    En Grasse estamos buscando los mejores aliados para establecer una red fuerte de representación de ventas a nivel nacional e internacional y queremos conocerte.
+                </p>
+
+                <p class="p-distribuidor">
+                    Estamos comprometidos con entregar más y mejores experiencias de bienestar y cuidado a nuestros clientes, y sabemos que podemos cumplir mejor esta misión de la mano de ustedes!
+                </p>
+
+                <p class="p-distribuidor">
+                    Dejanos tus datos, nuestro equipo revisará y se pondra en contacto contigo.
+                </p>
+
+            </section>
+
+        </article>
+
+        <article class="formulario">
+            <form action="/" method="post">
+                <p>
+                    <label for="nombre">¿Como te llamas?*</label>
+                    <input class="b" type="text" name="nombre" id="nombre" required>
+                </p>
+
+                <p>
+                    <label for="numero">Numero de contacto*</label>
+                    <input class="b" type="tel" name="numero" id="numero" required>
+                </p>
+
+                <div class="enviar-block">
+                    <button class="enviar" type="submit">Enviar</button>
+                </div>
+
+            </form>
+
+        </article>
         <article class="block-footer">
-            <div class="left-block"></div>
+            <div class="left-block">
+            </div>
             <img class="flor" src="/images/isotipo-recortado.png" alt="">
             <div class="right-block"></div>
         </article>
