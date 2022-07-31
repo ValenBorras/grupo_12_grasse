@@ -141,7 +141,7 @@
     }
     .detail-form{
         width: fit-content;
-        max-height: 70vw;
+        max-height: 60vw;
         min-height: 48vw;
         margin: 10px;
     }
