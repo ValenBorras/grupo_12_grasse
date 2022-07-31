@@ -1,0 +1,118 @@
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.login-form{
+    padding: 0 15px 20px 15px;
+    background-color:#ebebeb;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 10vw 0 10vw 0;
+    max-width: fit-content;    
+}
+
+.login-form input{
+    margin-bottom: 15px;
+    width: 60vw;
+}
+
+.control {
+    padding: 8px 8px;
+    border: none;
+}
+
+.login{
+    padding: 8px 8px;
+    border: none;
+    width: 80vw;
+}
+
+.button-login{
+    background-color: #b68778;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    width: 60vw;
+    transition: all 450ms;
+}
+
+.button-create{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    color: #b68778;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    width: 60vw;
+    transition: all 450ms;
+}
+
+.button-login:hover{
+    background-color: #755846;
+}
+
+.copy-login-form{
+    color: #755846;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 17px;
+    text-transform: none;
+    max-width: 55vw;
+    margin: 30px 10px;
+}
+
+.preg-form{
+    font-size: 12px;
+    color: #755846;
+    margin-top: 10px;
+}
+
+.preg-form a{
+    color: blue;
+}
+@media (min-width: 769px){
+    .copy-login-form{
+        max-width: 30vw;
+    }
+
+    .login-form input{
+        width: 35vw;
+    }
+
+    .button-login{
+        width: 35vw;
+        font-size: 15px;
+    }
+
+    .button-create{
+        width: 35vw;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px){
+    .login-form input{
+        width: 25vw;
+    }
+
+    .button-login{
+        width: 25vw;
+    }
+
+    .button-create{
+        width: 25vw;
+    }
+
+    .copy-login-form{
+        font-size: 23px;
+        max-width: 20vw;
+        line-height: 1.5;
+    }
+}
