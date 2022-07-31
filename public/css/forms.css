@@ -4,7 +4,7 @@
 }
 
 .login-form{
-    padding: 0 15px 20px 15px;
+    padding: 30px 15px 20px 15px;
     background-color:#ebebeb;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
     font-size: 17px;
     text-transform: none;
     max-width: 55vw;
-    margin: 30px 10px;
+    margin: 0px 10px 30px 10px;
 }
 
 .preg-form{
