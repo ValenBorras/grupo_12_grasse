@@ -108,7 +108,7 @@ h4 {
 }
 
 .wpp i{
-    font-size: 80px;
+    font-size: 60px;
     position: fixed;
     right:20px;
     bottom: 20px;
@@ -155,9 +155,7 @@ h4 {
         font-size: 14px;
     }
 
-    .wpp {
-        width: 60px;
-    }
+
 }
 
 @media screen and (min-width:1279px) {
@@ -199,7 +197,4 @@ h4 {
         font-size: 16px;
     }
 
-    .wpp {
-        width: 60px;
-    }
 }
