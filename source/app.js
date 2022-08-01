@@ -4,7 +4,7 @@ const app = express();
 const path= require('path');
 const port= process.env.port || 3030; 
 
-app.use(express.static(path.resolve(__dirname,'./public')));
+app.use(express.static(path.resolve(__dirname,'../public')));
 
 app.listen(port, () => console.log('Servidor corriendo...'));
 
