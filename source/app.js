@@ -1,31 +1,34 @@
 const express = require('express');
-const app = express();
+const server = express();
+const config = require('./modules/server');
+server.listen(config.port,config.start());
 
-const path= require('path');
-const port= process.env.port || 3030; 
+const {join} = require('path');
+const statics = require('./modules/static');
+server.use(statics(join(__dirname,"../public")));
 
-app.use(express.static(path.resolve(__dirname,'../public')));
+const productsRoutes = require('./routes/products.routes'); 
+server.use(productsRoutes); 
 
-app.listen(port, () => console.log('Servidor corriendo...'));
 
-app.get('/', (req,res)=> {
-    res.sendFile(path.join(__dirname,'./views/index.html'))
+server.get('/', (req,res)=> {
+    res.sendFile(join(__dirname,'./views/index.html'))
 });
 
-app.get('/detalle', (req,res)=> {
-    res.sendFile(path.join(__dirname,'./views/detail.html'))
+server.get('/detalle', (req,res)=> {
+    res.sendFile(join(__dirname,'./views/detail.html'))
 });
 
-app.get('/login', (req,res)=> {
-    res.sendFile(path.join(__dirname,'./views/login.html'))
+server.get('/login', (req,res)=> {
+    res.sendFile(join(__dirname,'./views/login.html'))
 });
 
-app.get('/register', (req,res)=> {
-    res.sendFile(path.join(__dirname,'./views/register.html'))
+server.get('/register', (req,res)=> {
+    res.sendFile(join(__dirname,'./views/register.html'))
 });
 
-app.get('/carrito', (req,res)=> {
-    res.sendFile(path.join(__dirname,'./views/cart.html'))
+server.get('/carrito', (req,res)=> {
+    res.sendFile(join(__dirname,'./views/cart.html'))
 });
 
 
