@@ -78,6 +78,10 @@ header {
     gap:0.2rem;
 }
 
+.carrito a{
+    padding: 0 5px;
+}
+
 .carrito i {
     color: white;
     align-items: center;

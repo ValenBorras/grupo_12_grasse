@@ -8,7 +8,7 @@
     <%- include ('./partials/header.ejs') %>
     <main>
         <section class="form">
-            <form action="/register" method="POST" class="login-form">
+            <form action="/login" method="POST" class="login-form">
                 <h2 class="copy-login-form"> ¡Hola! Para seguir, ingresa tu telefono, email o usuario, y contraseña </h2>
                 <div>
                    <input type="text" name="nombreCompleto" id="nombreCompleto" class="login" placeholder="Telefono, email o usuario" required>
@@ -16,7 +16,7 @@
                 <div>
                     <input type="password" name="password" id="password" class="login" placeholder="Contraseña" required>
                 </div>
-                <a href="/"><button type="button" class="button-login">Enviar</button></a>
+                <button type="submit" class="button-login">Enviar</button>
                 <a href="/register"><button type="button" class="button-create">Crear Cuenta</button></a>
            </form>
         </section>

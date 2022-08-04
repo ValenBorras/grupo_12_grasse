@@ -1,25 +1,32 @@
-/*const {Router} = require("express")
+const {Router} = require("express")
 const router = Router()
-const {join} = require('path');
 
 router.get('/', (req,res)=> {
-    res.render(join(__dirname,'./views/index.ejs'))
+    res.render('index')
 });
 
 router.get('/detalle', (req,res)=> {
-    res.render(join(__dirname,'./views/detail.ejs'))
+    res.render('detail')
 });
 
 router.get('/login', (req,res)=> {
-    res.render(join(__dirname,'./views/login.ejs'))
+    res.render('login')
 });
 
 router.get('/register', (req,res)=> {
-    res.render(join(__dirname,'./views/register.ejs'))
+    res.render('register')
 });
 
 router.get('/carrito', (req,res)=> {
-    res.render(join(__dirname,'./views/cart.ejs'))
+    res.render('cart')
 });
 
-module.exports = router;*/
+router.get('/create', (req,res)=> {
+    res.render('create')
+});
+
+router.get('/edit', (req,res)=> {
+    res.render('edit')
+});
+
+module.exports = router;
