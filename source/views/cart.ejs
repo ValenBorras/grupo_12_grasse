@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head.ejs') %>
+    <title>Carrito - Grasse</title>
+</head>
+    <body>
+        <%- include ('./partials/header.ejs') %>
+        <main>
+            <article class="contenido-carrito">
+                <section class="caja-title">
+
+                    <p class="title">Carrito</p>
+                    <div class="caja-caja-title">
+                        <p class="text-title">Anular Selección de todos los elementos</p>
+                        <p class="text-title">Precio</p>
+                    </div>
+
+                    <div class="caja-middle-car">
+                        
+                        <div class="izq">
+                            <img class="img-carrito" src="/images/Crema-280gr.png" alt="">
+                        </div>
+
+                        <div class="cen">
+                            <div class="cen1">
+                                <p>Crema Hidratante y Nutritiva Grasse 280g</p>
+                                <p class="dispo">Disponible</p>
+                            </div>
+
+                            <div class="cen2">
+                                <p class="e">Fragancia</p>
+                                
+                                <div class="list">
+                                    <p>Cantidad</p>
+                                    <select name="cant" id="cant">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                        <option value="">7</option>
+                                        <option value="">8</option>
+                                        <option value="">9</option>
+                                        <option value="">10+</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="der">
+                            <p>COP$39.999</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="car-bottom">
+                        <p>Subtotal (1 producto): COP$39.999</p>
+                    </div>
+
+                </section>
+
+                <section class="caja-pago">
+                    
+                    <div class="caja-pago-superior">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p> <b>Envío GRATIS</b> por compras superiores a COP$40.000</p>
+                    </div>
+
+                    <div class="caja-pago-inferior">
+                        
+                        <p>Subtotal (1 producto): <b>COP$39.999</b></p>
+                        <div class="pago-block"><button class="pago" type="submit">Proceder al pago</button></div>
+                        
+                    </div>
+
+                </section>
+
+
+            </article>
+
+
+
+
+           
+        </main>
+        <%- include ('./partials/footer.ejs') %> 
+    </body>
+</html>
