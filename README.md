@@ -6,3 +6,4 @@
 + [**Diseños**](./documents/diseños.md)
 + [**Wireframes**](./documents/wireframes.md)
 + [**Retrospectiva**](./documents/retro.md)
++ [**Tablero en GitHub**](https://github.com/ValenBorras/grupo_12_grasse/projects/1)
