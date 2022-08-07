@@ -1,0 +1,25 @@
+[
+    {
+        "name" : "Crema Hidratante y Nutritiva Grasse 280g",
+        "descripcion" : "Cuida tu piel y deja que los demás lo sientan",
+        "price" : "COP$39.999",
+        "principal img" : "./images/Crema-280gr.png",
+        "img-1" : "./images/Crema-280gr.png",
+        "img-2" : "./images/individual-crema-280g.png",
+        "img-3" : "./images/caja-crema-280gr.png"
+    },
+
+    {
+        "name" : "Crema Hidratante y Nutritiva Grasse 280g",
+        "descripcion" : "Cuida tu piel y deja que los demás lo sientan",
+        "price" : "COP$19.999",
+        "principal img" : "./images/Crema-85g.png",
+        "img-1" : "./images/Crema-85g.png",
+        "img-2" : "./images/individual-crema-85g.png",
+        "img-3" : "./images/caja-crema-85g.png"
+    }
+
+
+
+
+]

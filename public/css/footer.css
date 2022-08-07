@@ -101,6 +101,22 @@ h4 {
     border-top: 1px solid #A87F70;
 }
 
+.redes {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap:1rem;
+    padding-left: 2rem;
+}
+
+.redes a {
+    color:#A87F70;
+}
+
+
+
 .right-block {
     width: 33vw;
     display: flex;

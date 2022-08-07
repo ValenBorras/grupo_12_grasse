@@ -21,5 +21,6 @@ body{
     background-color: #FFF;
     width: 100vw;
     background-image: url(/images/Fondo.png);
+    overflow-x: hidden;
 }
 

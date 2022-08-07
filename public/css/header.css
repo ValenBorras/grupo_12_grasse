@@ -196,15 +196,15 @@ header {
     .barra-inicio{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color:#A87F70;
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 2rem;
         text-decoration: none;
         gap: 3rem;
         width: 100vw;
-        position:sticky;
+        position:fixed;
         top:0px;
-        z-index: 2;
+        z-index: 99;
     }
 
     .site {
@@ -219,7 +219,7 @@ header {
 
     .logo{
         width: 9rem;
-        margin: 0rem 2rem; 
+        margin: 0rem 1rem; 
     }
 
     .logo-block {
