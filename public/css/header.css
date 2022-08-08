@@ -35,6 +35,7 @@ header {
     background-color: white;
     padding: 0.3rem;
     color:#666;
+    z-index: 100;
 }
 
 .encabezado i {
@@ -43,6 +44,20 @@ header {
 
 .site, .login-navbar, .barra-busqueda {
     display:none;
+}
+
+.site a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;
+    padding-bottom: 0.3rem;
+}
+
+.site a:hover, .site a:focus {
+    background-size: 100% 2px;
 }
 
 .barra-inicio-mobile {
@@ -75,7 +90,8 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap:0.2rem;
+    gap:0rem;
+    z-index: 4;
 }
 
 .carrito a{
@@ -96,15 +112,6 @@ header {
     justify-content:flex-start;
     width: 33vw;
     font-size: 24px;
-}
-
-.banner {
-    width: 100vw;
-}
-
-.contenedor{
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -178,7 +185,7 @@ header {
 }
 
 @media screen and (min-width:1279px) {
-
+    
     .barra-inicio-mobile {
         display: none;
     }

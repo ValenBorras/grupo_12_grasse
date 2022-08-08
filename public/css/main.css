@@ -1,3 +1,15 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.banner {
+    width: 150vw;
+}
+
 .texto {
     display: flex;
     flex-direction: column;
@@ -75,16 +87,19 @@ h2{
     flex-direction: column;
     padding:4vw;
     align-items: center;
-    gap: 4vw;
     margin: 4vh 4vw;
+    gap:3rem;
     margin-bottom: 0vw;
 }
 
-.beneficios {
-    display:grid;
-    grid-template-columns: 50% 50%;
-    gap:3vw;
+.img-beneficios{
+    display: none;
 }
+
+.img-beneficios-mobile {
+    width: 70vw;
+}
+
 
 .testimonio a {
     text-decoration: none;
@@ -120,10 +135,17 @@ h2{
 }
 
 
-
-
 @media screen and (min-width:361px) and (max-width:768px) {
 
+    .img-beneficios-mobile {
+        display: none;
+    }
+
+    .img-beneficios {
+        display: block;
+        width: 80vw;
+    }
+    
     .texto {
         font-size: 15px;
     }
@@ -144,15 +166,6 @@ h2{
         font-size: 16px;
     }
 
-    .circle {
-        width: 75px;
-        height: 75px;
-    }
-
-    .beneficios {
-        display:flex;
-        gap:2vw;
-    }
 
     .testimonio a {
         font-size: 14px;
@@ -165,6 +178,10 @@ h2{
 
 
 @media screen and (min-width:769px) {
+
+    .banner {
+        width: 100vw;
+    }
 
     .pre-menu {
         display:flex;
@@ -184,6 +201,15 @@ h2{
         width: 20vw;
         justify-content: center;
         align-items: center;
+    }
+
+    .img-beneficios{
+        width: 60vw;
+        display: block;
+    }
+
+    .img-beneficios-mobile {
+        display: none;
     }
 
     .productos {
@@ -209,16 +235,6 @@ h2{
 
     h2{
         font-size: 19px;
-    }
-
-    .circle {
-        width: 100px;
-        height: 100px;
-    }
-
-    .beneficios {
-        display:flex;
-        gap:2vw;
     }
 
     .testimonio a {

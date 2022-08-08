@@ -106,9 +106,9 @@ h4 {
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     gap:1rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .redes a {
@@ -124,11 +124,15 @@ h4 {
 }
 
 .wpp i{
-    font-size: 60px;
+    font-size: 40px;
     position: fixed;
-    right:20px;
-    bottom: 20px;
+    right:10px;
+    bottom: 10px;
     color: #A87F70;
+}
+
+.wpp i:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (min-width:769px) {
@@ -171,6 +175,18 @@ h4 {
         font-size: 14px;
     }
 
+    .redes {
+        padding-left: 2rem;
+        font-size: 30px;
+    }
+
+    .wpp i{
+        font-size: 50px;
+        position: fixed;
+        right:20px;
+        bottom: 20px;
+        color: #A87F70;
+    }
 
 }
 
@@ -213,4 +229,17 @@ h4 {
         font-size: 16px;
     }
 
+    .redes {
+        padding-left: 2rem;
+        font-size: 30px;
+    }
+
+    .wpp i{
+        font-size: 60px;
+        position: fixed;
+        right:20px;
+        bottom: 20px;
+        color: #A87F70;
+    }
 }
+
