@@ -1,3 +1,16 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #A87F70;
+}
+
+.banner {
+    width: 150vw;
+}
+
 header {
     width:100vw;
  }
@@ -121,6 +134,7 @@ header {
     background-color: #A87F70;
     overflow-x: hidden;
     overflow-y: hidden;
+    display: flex;
 }
 
 .animation {
@@ -155,6 +169,10 @@ header {
 
 @media screen and (min-width:361px) {
 
+    .banner {
+        width: 100vw;
+    }
+    
     .logo{
         width: 9rem;
         margin: 0rem 2rem; 
@@ -170,6 +188,7 @@ header {
     .animation {
         font-size: 12px;
         animation-duration: 45s;
+        
     }
 
     .encabezado{
@@ -209,7 +228,7 @@ header {
         text-decoration: none;
         gap: 3rem;
         width: 100vw;
-        position:fixed;
+        position:sticky;
         top:0px;
         z-index: 99;
     }
@@ -283,13 +302,12 @@ header {
         margin: 0rem 0.5rem;
     }
 
-    .banner {
-        width: 100vw;
-    }
+   
 
     .animation {
         font-size: 14px;
         animation-duration: 60s;
+        
     }
 
     .bloque-texto {
