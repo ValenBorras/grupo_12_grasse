@@ -1,0 +1,12 @@
+[
+    {
+        "id":"1",
+        "Nombre":"Esteban",
+        "Apellido":"Molina",
+        "Email":"molii.esteban@gmail.com",
+        "Contraseña":"Ares442*",
+        "Categoria":"Administrador",
+        "imagen":"/images/227.jpg"
+    }
+
+]

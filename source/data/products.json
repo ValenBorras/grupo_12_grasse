@@ -1,25 +1,61 @@
 [
     {
         "name" : "Crema Hidratante y Nutritiva Grasse 280g",
-        "descripcion" : "Cuida tu piel y deja que los demás lo sientan",
+        "categoria": "Cremas Corporales",
+        "presentacion": "280g",
         "price" : "COP$39.999",
-        "principal img" : "./images/Crema-280gr.png",
-        "img-1" : "./images/Crema-280gr.png",
-        "img-2" : "./images/individual-crema-280g.png",
-        "img-3" : "./images/caja-crema-280gr.png"
+        "descripcion" : "Cuida tu piel y deja que los demás lo sientan",
+        "img" : "./images/Crema-280gr.png",
+        "id": 1
     },
 
     {
-        "name" : "Crema Hidratante y Nutritiva Grasse 280g",
-        "descripcion" : "Cuida tu piel y deja que los demás lo sientan",
-        "price" : "COP$19.999",
-        "principal img" : "./images/Crema-85g.png",
-        "img-1" : "./images/Crema-85g.png",
-        "img-2" : "./images/individual-crema-85g.png",
-        "img-3" : "./images/caja-crema-85g.png"
+        "name" : "Crema Hidratante y Nutritiva Grasse 85g",
+        "categoria": "Cremas Corporales",
+        "presentacion": "85g",
+        "price" : "COP$21.999",
+        "descripcion" : "lleva tu crema corporal a todas partes en tu bolso",
+        "img" : "./images/Crema-85g.png",
+        "id": 2
+    },
+
+    {
+        "name" : "Perfume Grasse 100ml",
+        "categoria": "Perfumes",
+        "presentacion": "100ml",
+        "price" : "COP$59.999",
+        "descripcion" : "Perfume de alta duración y fijación",
+        "img" : "./images/Perfume.png",
+        "id": 3
+    },
+
+    {
+        "name" : "Perfume Grasse 50ml",
+        "categoria": "Perfumes",
+        "presentacion": "50ml",
+        "price" : "COP$39.999",
+        "descripcion" : "Perfume de alta duración y fijación",
+        "img" : "./images/Perfume-50ml.png",
+        "id": 4
+    },
+
+    {
+        "name" : "Kit - Perfume 100ml y Crema Hidratante y Nutritiva 280g",
+        "categoria": "Kits",
+        "presentacion": "100ml y 280g",
+        "price" : "COP$82.999",
+        "descripcion" : "",
+        "img" : "",
+        "id": 5
+    },
+
+    {
+        "name" : "Kit - Perfume 50ml y Crema Hidratante y Nutritiva 85g",
+        "categoria": "Kits",
+        "presentacion": "50ml y 85g",
+        "price" : "COP$49.999",
+        "descripcion" : "",
+        "img" : "",
+        "id": 6
     }
-
-
-
-
 ]
