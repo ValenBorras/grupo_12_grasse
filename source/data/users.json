@@ -16,6 +16,15 @@
         "Contraseña":"Aguante_independiente",
         "Categoria":"Administrador",
         "imagen":""
+    },
+    {
+        "id":"3",
+        "Nombre":"Joaquin",
+        "Apellido":"Benitez",
+        "Email":"benitez.e.joaquin@gmail.com",
+        "Contraseña":"Contraseña123",
+        "Categoria":"Administrador",
+        "imagen":""
     }
 
 ]
