@@ -7,6 +7,15 @@
         "Contraseña":"Ares442*",
         "Categoria":"Administrador",
         "imagen":"/images/227.jpg"
+    },
+    {
+        "id":"2",
+        "Nombre":"Tadeo",
+        "Apellido":"Pavicich",
+        "Email":"tadeopavicich@gmail.com",
+        "Contraseña":"Aguante_independiente",
+        "Categoria":"Administrador",
+        "imagen":""
     }
 
 ]
