@@ -4,7 +4,8 @@
   "description": "+ [**Tematica**](./documents/tematica.md)\r + [**Equipo**](./documents/equipo.md)\r + [**Referentes**](./documents/referentes.md)\r + [**Diseños**](./documents/diseños.md)\r + [**Wireframes**](./documents/wireframes.md)",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon source/app.js -e js,mjs,json,ejs,css"
+    "test": "nodemon source/app.js -e js,mjs,json,ejs,css",
+    "start": "node source/app.js"
   },
   "repository": {
     "type": "git",
