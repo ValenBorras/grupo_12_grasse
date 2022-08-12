@@ -25,6 +25,17 @@
         "Contraseña":"Contraseña123",
         "Categoria":"Administrador",
         "imagen":""
+    },
+    {
+        {
+            "id":"4",
+            "Nombre":"Valentina",
+            "Apellido":"Borras",
+            "Email":"mvalentina.borras@gmail.com",
+            "Contraseña":"bocamipasion",
+            "Categoria":"Administrador",
+            "imagen":""
+        }
     }
 
 ]

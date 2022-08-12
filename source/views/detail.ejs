@@ -6,46 +6,46 @@
 </head>
 <body>
     <%- include ('./partials/header.ejs') %>
-    <main>
-        <section class="detail-main-block">
-            <section class="detail-section1">
-                <article class="prod-detail">
+    <main class="detail-main-block">
+            <div class="detail-section1">
+                <picture class="prod-detail">
                     <img class="prod" src="/images/Crema-280gr.png" alt="">
-                </article>
-                <article class="prod-detail">
+                </picture>
+                <picture class="prod-detail">
                     <img class="prod" src="/images/Crema-280gr.png" alt="">
-                </article>
-                <article class="prod-detail">
+                </picture>
+                <picture class="prod-detail">
                     <img class="prod" src="/images/Crema-280gr.png" alt="">
-                </article>
-            </section>
-            <section class="detail-section2">
-                <article class="main-prod-detail">
+                </picture>
+            </div>
+            <div class="detail-section2">
+                <picture class="main-prod-detail">
                     <img src="/images/Crema-280gr.png" alt="">
-                </article>
-            </section>
-            <section class="detail-section">
-                <div class="desc-block"> 
+                </picture>
+            </div>
+            <div class="desc-block">
                 <form action="/Detalle" method="POST" class="detail-form">
                     <article class="desc-block-section1">
                         <h2 class="detail-title">Crema Hidratante y Nutritiva Grasse 280g</h2>
                         <p>COP$39.999</p>
                     </article>
-                    <article class="desc-block-section2">
-                        <div class="marca"><label for="marca">Marca: </label><input type="text" id="marca" name="detail" class="detail-input"></div>
-                        <div><label for="ref">Referencia: </label><input type="text" id="ref" name="detail" class="detail-input"></div>
-                    </article>
-                    <article class="desc-block-sectionB">
-                       <a href="/carrito"><button type="button" class="detail-button">Agregar al carrito</button></a> 
-                    </article>
-                    <article class="desc-block-section">
+                    <div class="desc-block-section2">
+                        <div class="marca">
+                            <label for="marca">Marca: </label>
+                            <input type="text" id="marca" name="detail" class="detail-input">
+                        </div>
+                        <div>
+                            <label for="ref">Referencia: </label>
+                            <input type="text" id="ref" name="detail" class="detail-input">
+                        </div>
+                    </div>
+                        <button type="submit" class="detail-button">Agregar al carrito</button>
+                
                         <p class="copy-form"> Cuida tu piel y deja que los demas lo sientan </p>
                         <p> Hecho en colombia </p>
-                    </article>
+
                 </form>
-                </div>
-            </section>
-        </section>
+            </div>
     </main>
     <%- include ('./partials/footer.ejs') %> 
 </body>
