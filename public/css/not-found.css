@@ -1,0 +1,41 @@
+
+.img-404 {
+    width: 70vw;
+}
+
+.contenedor-img-404 {
+    display: flex;
+    justify-content: center;
+}
+
+.p-404 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color:#A87F70;
+    margin: 0rem 20vw
+}
+
+.a-404 {
+text-decoration: none;
+color:white;
+}
+
+.back-bottom {
+    display: flex;
+    border: 1px solid #A87F70;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    background-color: #A87F70;
+    box-shadow: 0 3px 3px rgba(0 0 0 / 0.15);
+}
+
+.caja-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
