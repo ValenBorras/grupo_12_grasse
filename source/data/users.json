@@ -1,38 +1,38 @@
 [
-    {
-        "id":"1",
-        "Nombre":"Esteban",
-        "Apellido":"Molina",
-        "Email":"molii.esteban@gmail.com",
-        "Contraseña":"Ares442*",
-        "Categoria":"Usuario",
-        "imagen":"/images/227.jpg"
-    },
-    {
-        "id":"2",
-        "Nombre":"Tadeo",
-        "Apellido":"Pavicich",
-        "Email":"tadeopavicich@gmail.com",
-        "Contraseña":"Aguante_independiente",
-        "Categoria":"Administrador",
-        "imagen":"/images/imgTadeo.jpg"
-    },
-    {
-        "id":"3",
-        "Nombre":"Joaquin",
-        "Apellido":"Benitez",
-        "Email":"benitez.e.joaquin@gmail.com",
-        "Contraseña":"Contraseña123",
-        "Categoria":"Administrador",
-        "imagen":""
-    },
-    {
-        "id":"4",
-        "Nombre":"Valentina",
-        "Apellido":"Borras",
-        "Email":"mvalentina.borras@gmail.com",
-        "Contraseña":"bocamipasion",
-        "Categoria":"Administrador",
-        "imagen":""
-    }
+ {
+  "id": 1,
+  "Nombre": "Esteban",
+  "Apellido": "Molina",
+  "Email": "molii.esteban@gmail.com",
+  "Contraseña": "Ares442*",
+  "Categoria": "Usuario",
+  "imagen": "/images/227.jpg"
+ },
+ {
+  "id": 2,
+  "Nombre": "Tadeo",
+  "Apellido": "Pavicich",
+  "Email": "tadeopavicich@gmail.com",
+  "Contraseña": "Aguante_independiente",
+  "Categoria": "Administrador",
+  "imagen": "/images/imgTadeo.jpg"
+ },
+ {
+  "id": 3,
+  "Nombre": "Joaquin",
+  "Apellido": "Benitez",
+  "Email": "benitez.e.joaquin@gmail.com",
+  "Contraseña": "Contraseña123",
+  "Categoria": "Administrador",
+  "imagen": ""
+ },
+ {
+  "id": 4,
+  "Nombre": "Valentina",
+  "Apellido": "Borras",
+  "Email": "mvalentina.borras@gmail.com",
+  "Contraseña": "bocamipasion",
+  "Categoria": "Administrador",
+  "imagen": ""
+ }
 ]
