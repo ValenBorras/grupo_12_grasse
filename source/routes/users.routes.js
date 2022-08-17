@@ -1,12 +1,9 @@
 const {Router} = require("express");
 const router = Router();
+const controller = require('../controllers/users.controller');
 
-router.get('/login', (req,res)=> {
-    res.render('login')
-});
+router.get('/login', controller.login);
 
-router.get('/register', (req,res)=> {
-    res.render('register')
-});
+router.get('/register', controller.register);
 
 module.exports = router;
