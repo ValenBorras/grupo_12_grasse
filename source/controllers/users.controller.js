@@ -2,7 +2,7 @@ const User = require('../models/Users.model');
 
 const controller = {
     register:(req,res)=>{
-        return res.render('register')
+        return res.render('users/register')
     },
     
     processRegister:(req,res)=>{
@@ -21,7 +21,7 @@ const controller = {
     },
 
     login: (req,res)=>{
-        return res.render('login')
+        return res.render('users/login')
     },
 }
 
