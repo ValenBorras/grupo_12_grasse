@@ -6,46 +6,45 @@
 </head>
 <body>
     <%- include ('./partials/header.ejs') %>
-    <main class="detail-main-block">
-            <div class="detail-section1">
-                <picture class="prod-detail">
-                    <img class="prod" src="/images/Crema-280gr.png" alt="">
-                </picture>
-                <picture class="prod-detail">
-                    <img class="prod" src="/images/Crema-280gr.png" alt="">
-                </picture>
-                <picture class="prod-detail">
-                    <img class="prod" src="/images/Crema-280gr.png" alt="">
-                </picture>
-            </div>
-            <div class="detail-section2">
-                <picture class="main-prod-detail">
-                    <img src="/images/Crema-280gr.png" alt="">
-                </picture>
-            </div>
-            <div class="desc-block">
-                <form action="/Detalle" method="POST" class="detail-form">
-                    <article class="desc-block-section1">
-                        <h2 class="detail-title">Crema Hidratante y Nutritiva Grasse 280g</h2>
-                        <p>COP$39.999</p>
-                    </article>
-                    <div class="desc-block-section2">
-                        <div class="marca">
-                            <label for="marca">Marca: </label>
-                            <input type="text" id="marca" name="detail" class="detail-input">
-                        </div>
-                        <div>
-                            <label for="ref">Referencia: </label>
-                            <input type="text" id="ref" name="detail" class="detail-input">
-                        </div>
-                    </div>
-                        <button type="submit" class="detail-button">Agregar al carrito</button>
-                
-                        <p class="copy-form"> Cuida tu piel y deja que los demas lo sientan </p>
-                        <p> Hecho en colombia </p>
+    <main>
+        
+        <article class="detail-box">
+            <section class="caja-img-producto">
+                <img class="img-producto" src="/images/Crema-280gr.png" alt="">
+            </section>
 
-                </form>
-            </div>
+            <section class="info-producto">
+                <div class="bloque-info-1">
+                    <p class="title-product">Crema Hidratante y Nutritiva 280g</p>
+                    <p class="precio-producto">COP$39.999</p>
+                </div>
+                <div class="bloque-info-2">
+
+                    <div class="selector-marca">
+                        <label class="marca" for="marca">Marca:</label>
+                        <select name="" id="marca">
+                        </select>
+
+                    </div>
+
+                    <div class="selector-referencia">
+                        <label class="referencia" for="referencia">Referencia:</label>
+                        <select name="" id="referencia">
+                        </select>
+                    </div>
+                </div>
+                <section class="cart-block">
+                    <div class="go-cart">
+                        <a href=""><p>Agregar al carrito</p></a>
+                    </div>
+                </section>    
+                <div class="low-info">
+                    <p>Cuida tu piel y deja que los demás lo sientan</p>
+                    <p>Hecho en Colombia</p>
+                </div>
+            </section>
+        </article>   
+
     </main>
     <%- include ('./partials/footer.ejs') %> 
 </body>
