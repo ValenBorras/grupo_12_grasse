@@ -121,6 +121,10 @@ a {
     box-shadow: 0 2px 3px rgba(0 0 0 / 0.15);
 }
 
+.caja-catalogo:hover {
+    transform: scale(1.05);
+}
+
 .caja-catalogo a {
     text-decoration: none;
     color: white;
