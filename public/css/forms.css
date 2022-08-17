@@ -95,6 +95,16 @@
     font-weight: 500;
 }
 
+.bloque-crema-form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bloque-perfume-form {
+    display: flex;
+    justify-content: flex-start;
+}
+
 @media (min-width: 769px){
     .copy-login-form{
         max-width: 30vw;
