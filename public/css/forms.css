@@ -19,6 +19,11 @@
     width: 60vw;
 }
 
+.login-form select{
+    margin-bottom: 15px;
+    width: 60vw;
+}
+
 .control {
     padding: 8px 8px;
     border: none;
@@ -122,6 +127,10 @@
         width: 35vw;
     }
 
+    .login-form select{
+        width: 35vw;
+    }
+
     .button-login{
         width: 35vw;
         font-size: 15px;
@@ -135,6 +144,10 @@
 
 @media (min-width: 1200px){
     .login-form input{
+        width: 25vw;
+    }
+
+    .login-form select{
         width: 25vw;
     }
 
