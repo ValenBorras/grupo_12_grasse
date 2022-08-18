@@ -2,7 +2,7 @@ const {Router} = require("express")
 const router = Router()
 
 router.get('/detalle', (req,res)=> {
-    res.render('detail')
+    res.render('products/detail')
 });
 
 router.get('/carrito', (req,res)=> {
@@ -10,11 +10,11 @@ router.get('/carrito', (req,res)=> {
 });
 
 router.get('/create', (req,res)=> {
-    res.render('create')
+    res.render('products/create')
 });
 
 router.get('/edit', (req,res)=> {
-    res.render('edit')
+    res.render('products/edit')
 });
 
 module.exports = router;  
