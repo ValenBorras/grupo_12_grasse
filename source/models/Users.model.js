@@ -26,7 +26,7 @@ const User = {
         return 1
     },
 
-// Buscar al usuario por su id
+    // Buscar al usuario por su id
     findByPk: function(id){
        let allUsers = User.findAll();
        let userFound = allUsers.find(e => e.id === id);
