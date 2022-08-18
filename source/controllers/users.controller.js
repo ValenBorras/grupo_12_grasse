@@ -1,4 +1,5 @@
 const User = require('../models/Users.model');
+const {validationResult} = require('express-validator');
 
 const controller = {
     register:(req,res)=>{
@@ -6,18 +7,16 @@ const controller = {
     },
     
     processRegister:(req,res)=>{
+       const result =  validationResult(req);
 
-//        const resultValidation = validationResult(req);
+       if(!result.isEmpty()){
+        return res.render('users/register',{
+            style:'register',
+            errors: result.mapped(), 
+            data: req.body
+        })
+    }
 
-//        if (resultValidation.errors.length > 0) {
-//            return res.render('register',{
-//                errors: resultValidation.mapped(),
-//                oldData: req.body
-//            });
-//        }
-
-        User.create(req.body);
-        return res.redirect('/')
     },
 
     login: (req,res)=>{

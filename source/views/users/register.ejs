@@ -8,19 +8,50 @@
     <%- include ('../partials/header.ejs') %> 
     <main>
         <section class="form">
-            <form action="/register" method="POST" class="login-form">
+            <form action="/register" method="POST" class="login-form" enctype="multipart/form-data">
                 <h2 class="copy-login-form"> Crear Cuenta </h2>
                 <div>
-                   <input type="text" name="nombreCompleto" id="nombreCompleto" class="login" placeholder="Nombre y Apellido" required>
+                   <input type="text" name="nombre" id="nombre" class="login" placeholder="Nombre">
+                   <% if (locals.errors && locals.errors.nombre){ %>
+
+                    <p class="error">
+                        <%= locals.errors.nombre.msg %>
+                    </p>
+
+                   <% } %>
                 </div>
                 <div>
-                    <input type="text" name="tel-email" id="tel-email" class="login" placeholder="Numero de telefono movil o correo electronico" required>
+                    <input type="text" name="apellido" id="apellido" class="login" placeholder="Apellido">
+                    <% if (locals.errors && locals.errors.apellido){ %>
+
+                        <p class="error">
+                            <%= locals.errors.apellido.msg %>
+                        </p>
+    
+                    <% } %>
+                 </div>
+                <div>
+                    <input type="text" name="email" id="email" class="login" placeholder="Correo electronico">
+                    <% if (locals.errors && locals.errors.email){ %>
+
+                        <p class="error">
+                            <%= locals.errors.email.msg %>
+                        </p>
+    
+                    <% } %>
                 </div>
                 <div>
-                    <input type="password" name="password" id="password" class="login" placeholder="Ingresa una contraseña" required minlength="6">                
+                    <input type="password" name="password" id="password" class="login" placeholder="Contraseña">
+                    <% if (locals.errors && locals.errors.password){ %>
+
+                        <p class="error">
+                            <%= locals.errors.password.msg %>
+                        </p>
+    
+                    <% } %>               
                 </div>
                 <div>
-                    <input type="passwordv" name="passwordv" id="passwordv" class="login" placeholder="Vuelve a escribir la contraseña" required minlength="6">
+                    <input type="file" name="users" id="users" class="login">
                 </div>
                 <button type="submit" class="button-login">Enviar</button>
                 <div>

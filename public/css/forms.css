@@ -105,6 +105,14 @@
     justify-content: flex-start;
 }
 
+.error{
+    flex: 0 0 100%;
+    padding: 10px;
+    background-color: tomato;
+    color: snow;
+    margin-bottom: 15px;
+}
+
 @media (min-width: 769px){
     .copy-login-form{
         max-width: 30vw;
