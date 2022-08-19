@@ -29,6 +29,14 @@
     border: none;
 }
 
+#userType.login {
+    margin-top:15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #666;
+}
+
 .login{
     padding: 8px 8px;
     border: none;

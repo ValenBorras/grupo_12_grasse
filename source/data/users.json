@@ -34,13 +34,7 @@
   "password": "bocamipasion",
   "category": "Administrador",
   "img": ""
- },
- {
-  "id": 5,
-  "name": "Monica",
-  "surname": "Florez",
-  "email": "moniflorez1977@gmail.com",
-  "password": "$2a$10$iDmf.wSnzlc/MGJDzURsne9/Svos.4firJ70mTW1Q.qfd9ll2I2FW",
-  "img": "img-1660931838705-556455244.jpeg"
  }
+ 
+
 ]
