@@ -15,7 +15,7 @@
 
 
 .login-form input{
-    margin-bottom: 15px;
+    margin-top: 15px;
     width: 60vw;
 }
 
@@ -112,10 +112,14 @@
 
 .error{
     flex: 0 0 100%;
-    padding: 10px;
     background-color: tomato;
     color: snow;
-    margin-bottom: 15px;
+    border-radius: 9px;
+    padding: 3px 8px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 13px;
+    width: fit-content;
 }
 
 @media (min-width: 769px){

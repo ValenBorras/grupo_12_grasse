@@ -5,18 +5,11 @@ const fs = require('fs');
 const User = {
     FileName:'./source/data/users.json',
     
-// Buscar a todos los usuarios 
-    getData: function(){
+    all: function(){
         return JSON.parse(fs.readFileSync(User.FileName, 'utf-8'));
     },
-
-    findAll: function(){
-        return User.getData();
-    }, 
-
-// Generar un id 
     generateId: function(){
-        let allUsers = User.findAll();
+        let allUsers = User.all();
         let lastUser = allUsers.pop();
 
         if(lastUser){
@@ -25,43 +18,38 @@ const User = {
 
         return 1
     },
-
-    // Buscar al usuario por su id
     findByPk: function(id){
-       let allUsers = User.findAll();
+       let allUsers = User.all();
        let userFound = allUsers.find(e => e.id === id);
        return userFound
     },
-
-// Buscar al usuario por su email
     findByEmail: function(email){
-        let allUsers = User.findAll();
+        let allUsers = User.all();
         let userFound = allUsers.find(e => e.email === email);
         return userFound
     },
-
-// Buscar al usuario por cualquier campo 
     findByField: function(field, text){
-        let allUsers = User.findAll();
+        let allUsers = User.all();
         let userFound = allUsers.find(e => e[field] === text);
         return userFound
     },
- 
-// Guardar al usuario en la DB 
     create: function(userData) {
-        let allUsers = User.findAll();
+        let allUsers = User.all();
         let newUser = {
             id: User.generateId(),
-            ...userData
+            name: userData.name,
+            surname: userData.surname, 
+            email: userData.email,
+            password: userData.password, 
+            category: userData.category, 
+            img: userData.img,
         }
         allUsers.push(newUser);
         fs.writeFileSync(User.FileName, JSON.stringify(allUsers, null, ' '))
         return newUser;
     },
-
-// Eliminar a un usuario de la DB 
     delete: function(id){
-        let allUsers = User.findAll();
+        let allUsers = User.all();
         let finalUsers = allUsers.filter(e => e.id !== id );
         fs.writeFileSync(User.FileName, JSON.stringify(finalUsers, null, ' '))
     }

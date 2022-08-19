@@ -11,27 +11,27 @@
             <form action="/register" method="POST" class="login-form" enctype="multipart/form-data">
                 <h2 class="copy-login-form"> Crear Cuenta </h2>
                 <div>
-                   <input type="text" name="nombre" id="nombre" class="login" placeholder="Nombre">
-                   <% if (locals.errors && locals.errors.nombre){ %>
+                   <input type="text" name="name" id="name" class="login" placeholder="Nombre" value="<%= locals.errors && !locals.errors.name && locals.data ? locals.data.name : null %>">
+                   <% if (locals.errors && locals.errors.name){ %>
 
                     <p class="error">
-                        <%= locals.errors.nombre.msg %>
+                        <%= locals.errors.name.msg %>
                     </p>
 
                    <% } %>
                 </div>
                 <div>
-                    <input type="text" name="apellido" id="apellido" class="login" placeholder="Apellido">
-                    <% if (locals.errors && locals.errors.apellido){ %>
+                    <input type="text" name="surname" id="surname" class="login" placeholder="Apellido" value="<%= locals.errors && !locals.errors.surname && locals.data ? locals.data.surname : null %>" >
+                    <% if (locals.errors && locals.errors.surname){ %>
 
                         <p class="error">
-                            <%= locals.errors.apellido.msg %>
+                            <%= locals.errors.surname.msg %>
                         </p>
     
                     <% } %>
                  </div>
                 <div>
-                    <input type="text" name="email" id="email" class="login" placeholder="Correo electronico">
+                    <input type="text" name="email" id="email" class="login" placeholder="Correo electronico" value="<%= locals.errors && !locals.errors.email && locals.data ? locals.data.email : null %>">
                     <% if (locals.errors && locals.errors.email){ %>
 
                         <p class="error">
@@ -57,7 +57,13 @@
                     <% } %>               
                 </div>
                 <div>
-                    <input type="file" name="users" id="users" class="login">
+                    <input type="file" name="img" id="img" class="login">
+                    <% if (locals.errors && locals.errors.img){ %>
+
+                        <p class="error">
+                            <%= locals.errors.img.msg %>
+                        </p>    
+                    <% } %>
                 </div>
                 <button type="submit" class="button-login">Enviar</button>
                 <div>
