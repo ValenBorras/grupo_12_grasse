@@ -3,7 +3,7 @@ const {all,one,generate, write} = require("../models/products.model");
 const controller = {
     
     detalle: (req,res) => {
-        res.render("detail")
+        res.render("./products/detail")
     },
 
     carrito : (req,res)=> {
@@ -11,11 +11,11 @@ const controller = {
     },
 
     create: (req,res)=> {
-        return res.render("create")
+        return res.render("./products/create")
     },
 
     edit : (req,res)=> {
-        res.render('edit')
+        res.render('./products/edit')
     },
     
     /*index: (req,res) => {
