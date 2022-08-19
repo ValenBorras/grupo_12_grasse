@@ -1,3 +1,7 @@
+.busqueda {
+    display: none;
+}
+
 .contenedor {
     display: flex;
     flex-direction: column;
@@ -49,6 +53,7 @@ header {
     padding: 0.3rem;
     color:#666;
     z-index: 100;
+    margin-bottom: 0rem;
 }
 
 .encabezado i {
@@ -71,6 +76,7 @@ header {
 
 .site a:hover, .site a:focus {
     background-size: 100% 2px;
+    color: white;
 }
 
 .barra-inicio-mobile {
@@ -131,7 +137,6 @@ header {
 .bloque-texto {
     height: 1.2rem;
     padding: 0.2rem 0rem; 
-    background-color: #A87F70;
     overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
@@ -168,6 +173,10 @@ header {
 
 
 @media screen and (min-width:361px) {
+
+    .busqueda {
+        display: none;
+    }
 
     .banner {
         width: 100vw;
@@ -241,6 +250,7 @@ header {
         font-size: 14px;
         justify-content: space-around;
         width: 100vw;
+        margin-bottom: 0rem;
     }
 
     .logo{
@@ -263,6 +273,7 @@ header {
         color: white;
         justify-content: flex-end;
         width: 20%;
+        margin-bottom: 0rem;
     }
 
     .busqueda {
