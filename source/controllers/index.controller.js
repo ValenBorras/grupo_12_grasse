@@ -4,6 +4,9 @@ const controller  = {
     },
     testimonios: (req,res)=> {
         res.render("testimonios")
+    },
+    faqs: (req,res)=> {
+        res.render("faqs")
     }
 }
 
