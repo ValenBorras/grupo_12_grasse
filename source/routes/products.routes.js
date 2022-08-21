@@ -4,34 +4,18 @@ const controller = require("../controllers/products.controller")
 
 const upload = require('../middlewares/multer');
 
-router.get("/detalle",controller.detalle);
+router.get('/', controller.index);
 
-router.get("/carrito",controller.carrito);
+router.get("/detalle/:product", controller.detail);
 
-router.get("/create",controller.create);
+router.get("/home/carrito", controller.carrito);
+
+router.get("/create", controller.create);
 
 router.post('/save', upload.single('img'), controller.createProcess);
 
-router.get('/edit',controller.edit);
+router.get('/home/detail/edit/:product', controller.edit);
 
-/*<<<<<<< HEAD
-
-=======
-router.get('/detalle', (req,res)=> {
-    res.render('products/detail')
-});
-
-router.get('/carrito', (req,res)=> {
-    res.render('cart')
-});
-
-router.get('/create', (req,res)=> {
-    res.render('products/create')
-});
-
-router.get('/edit', (req,res)=> {
-    res.render('products/edit')
-});
->>>>>>> 5eccb36460eadbfee634f979822f71e78ea86b7d*/
+router.put('/update', upload.single('img'), controller.editProcess);
 
 module.exports = router;  

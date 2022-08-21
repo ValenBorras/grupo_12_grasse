@@ -81,8 +81,20 @@
             </section>
 
             <article class="caja-tienda">
-            
-                <a href="/Detalle">
+                
+                <% if (products.length > 0) { %>
+                    
+                        <% products.forEach(element => { %> 
+                            <%- include('./partials/product.ejs',{element:element})  %> 
+                        <% }) %>
+                    
+                <% } else { %>
+                     <h2> 
+                        No hay productos
+                     </h2>
+                <% } %>
+
+<!--                 <a href="/Detalle">
                     <section class="caja-general">
                         
                         <div class="caja-imagen"><img class="imagenes" src="/images/Crema-280gr.png" alt=""></div>
@@ -121,7 +133,7 @@
                             <p class="precio">COP$39.999</p>
                         </div>
                     </section>
-                </a>
+                </a> -->
 
             </article>
 

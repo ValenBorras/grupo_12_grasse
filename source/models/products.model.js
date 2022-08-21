@@ -10,7 +10,7 @@ let Products = {
     },
 
     one: function (id) {
-        let all = model.all();
+        let all = Products.all();
         return all.find(e => e.id == id)
     },
 

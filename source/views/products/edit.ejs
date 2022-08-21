@@ -8,8 +8,8 @@
     <%- include ('../partials/header.ejs') %>
     <main>
         <section class="form">
-            <form action="/create" method="post"class='login-form'>
-                <h2 class="copy-login-form">Edicion de Producto</h2>
+            <form action="/update?m=PUT" method="post"class='login-form'>
+                <h2 class="copy-login-form">Edicion del Producto nro <%= product.id %>  </h2>
 
                 <label for="name" class="label-forms">Nombre del producto</label>
                 <input type="text" name="name" id="name" value="Valor anterior" class="login">
