@@ -3,6 +3,7 @@ const router = Router();
 const controller = require('../controllers/users.controller');
 
 const validationsRegister = require('../validations/register');
+const validationsLogin = require('../validations/login');
 
 //multer
 

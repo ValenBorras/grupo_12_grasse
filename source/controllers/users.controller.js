@@ -37,7 +37,19 @@ const controller = {
 
     loginProcess: (req,res)=>{
         return res.send(req.body)
-    }
+/*      let userToLogin = User.findByField('email', req.body.email);
+
+     if(userToLogin){
+
+     }
+        return res.render('user/login',{
+            errors:{
+                email:{
+                    msg:'Este email no esta registrado'
+                }
+            }
+        })*/
+    }    
 }
 
 module.exports = controller;
