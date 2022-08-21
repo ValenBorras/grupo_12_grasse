@@ -14,6 +14,14 @@ const controller = {
         return res.render("./products/create")
     },
 
+    createProcess: (req,res) => {
+        let nuevo = generate(req.body)
+        let todos = all()
+        todos.push(nuevo)
+        write(todos)
+        return res.redirect("/")
+    },
+
     edit : (req,res)=> {
         res.render('./products/edit')
     },

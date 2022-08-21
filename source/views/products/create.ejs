@@ -8,7 +8,7 @@
     <%- include ('../partials/header.ejs') %>
     <main>
         <section class="form">
-            <form action="/create" method="POST" class='login-form'>
+            <form action="/save" method="POST" class='login-form' enctype="multipart/form-data">
                 <h2 class="copy-login-form">Creacion de Productos</h2>
 
                 <label for="name" class="label-forms">Nombre del producto</label>
@@ -18,21 +18,46 @@
                 <input type="text" name="description" id="description" class="login">
 
                 <label for="image" class="label-forms">Imagen</label>
-                <input type="file" name="image" id="image" class="login">
+                <input type="file" name="img" id="img" class="login">
                 
 
                 <legend for="category" class="label-forms">Categoría</legend>
-                <div class="bloque-crema-form">
-                    <label for="category-crema" class="radio">Crema</label>
+                <div class="bloque-radio">   
                     <input type="radio" name="category" id="category-crema" value="crema" class="radio-option">
+                    <label for="category-crema" class="radio">Crema</label>                 
+
                 </div>
-                <div class="bloque-perfume-form"> 
-                    <label for="category-perfume" class="radio">Perfume</label>
+                <div class="bloque-radio"> 
                     <input type="radio" name="category" id="category-perfume" value="perfume" class="radio-option">
+                    <label for="category-perfume" class="radio">Perfume</label>
                 </div>
 
-                <label for="fragrancies" class="label-forms">Fragancias</label>
-                <input type="text" name="fragrancies" id="fragrancies" class="login">
+                <legend for="category" class="label-forms">Presentacion</legend>
+                <div class="bloque-radio">
+                    <input type="radio" name="presentation" id="presentation-50ml" value="50ml" class="radio-option">                    
+                    <label for="presentation-50ml" class="radio">50ml</label>
+                </div>
+                <div class="bloque-radio">       
+                    <input type="radio" name="presentation" id="presentation-85g" value="85g" class="radio-option">             
+                    <label for="presentation-85g" class="radio">85g</label>
+                </div>
+                <div class="bloque-radio">
+                    <input type="radio" name="presentation" id="presentation-100ml" value="100ml" class="radio-option">                    
+                    <label for="presentation-100ml" class="radio">100ml</label>
+                </div>
+                <div class="bloque-radio"> 
+                    <input type="radio" name="presentation" id="presentation-280g" value="280g" class="radio-option">                   
+                    <label for="presentation-280g" class="radio">280g</label>
+                </div>
+                <div class="bloque-radio">
+                    <input type="radio" name="presentation" id="presentation-50ml-85g" value="50ml-85g" class="radio-option">
+                    <label for="presentation-50ml-85g" class="radio">50ml y 85g</label>
+                </div>
+                <div class="bloque-radio">                    
+                    <input type="radio" name="presentation" id="presentation-100ml-280g" value="100ml-280g" class="radio-option">
+                    <label for="presentation-100ml-280g" class="radio">100ml y 280g</label>
+                </div>
+
 
                 <label for="price" class="label-forms">Precio</label>
                 <input type="text" name="price" id="price" class="login">

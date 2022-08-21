@@ -19,13 +19,15 @@ server.use(statics(join(__dirname,"../public")));
 //put y delete 
 server.use(method('m')) 
 
+
+//req.body
+server.use(express.urlencoded({extended:true}))
+server.use(express.json())
+
 //rutas
 server.use(require('./routes/index.routes.js')); 
 server.use(require('./routes/products.routes.js')); 
 server.use(require('./routes/users.routes.js')); 
-
-//req.body
-server.use(express.urlencoded({extended:true}))
 
 //404
 server.use((req,res,next)=> {

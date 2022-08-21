@@ -2,11 +2,17 @@ const {Router} = require("express")
 const router = Router()
 const controller = require("../controllers/products.controller")
 
+const upload = require('../middlewares/multer');
 
-router.get("/detalle",controller.detalle)
-router.get("/carrito",controller.carrito)
-router.get("/create",controller.create)
-router.get('/edit',controller.edit)
+router.get("/detalle",controller.detalle);
+
+router.get("/carrito",controller.carrito);
+
+router.get("/create",controller.create);
+
+router.post('/save', upload.single('img'), controller.createProcess);
+
+router.get('/edit',controller.edit);
 
 /*<<<<<<< HEAD
 

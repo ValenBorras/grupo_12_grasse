@@ -26,9 +26,7 @@ const controller = {
 
     let userCreated = User.create(userToCreate);
 
-    res.redirect('/login')
-
-    
+    res.redirect('/login')    
     },
 
     login: (req,res)=>{
@@ -36,19 +34,18 @@ const controller = {
     },
 
     loginProcess: (req,res)=>{
-        return res.send(req.body)
-/*      let userToLogin = User.findByField('email', req.body.email);
+     let userToLogin = User.findByField('email', req.body.email);
 
      if(userToLogin){
 
      }
-        return res.render('user/login',{
+        return res.render('users/login',{
             errors:{
                 email:{
                     msg:'Este email no esta registrado'
                 }
             }
-        })*/
+        })
     }    
 }
 

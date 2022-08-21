@@ -1,7 +1,7 @@
 const {resolve} = require("path")
 const fs = require("fs")
 
-let model = {
+let Products = {
 
     all : function() {
         let file =resolve(__dirname,"../data","products.json")
@@ -14,15 +14,18 @@ let model = {
         return all.find(e => e.id == id)
     },
 
-    generate: function() {
-        let all = model.all();
+    generate: function(data) {
+        let all = Products.all();
         let last = all.pop()
         let product = {}
         product.name = data.name
+        product.description = data.description
+        product.img = data.img
         product.price = parseInt(data.price)
         product.category = data.category
+        product.presentation = data.presentation
         product.id = last.id + 1
-        return product;
+        return product;        
     },
 
     write: function(data) {
@@ -31,3 +34,5 @@ let model = {
         return fs.writeFileSync(file,json)
     }
 }
+
+module.exports = Products; 

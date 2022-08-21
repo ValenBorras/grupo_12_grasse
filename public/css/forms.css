@@ -100,22 +100,29 @@
     color: blue;
 }
 
+.bloque-radio{
+    display: flex;
+    position: relative;
+}
+
 .radio{
     margin: 0; 
     font-size: 10;
     text-align: left;
     color: #755846;
     font-weight: 500;
+    width: fit-content;
+    position: absolute;
+    left: 35px;
 }
 
-.bloque-crema-form {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.bloque-perfume-form {
-    display: flex;
-    justify-content: flex-start;
+.radio-option{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    position: relative; 
+    right: 45%;
+    bottom: 8px;
 }
 
 .error{
