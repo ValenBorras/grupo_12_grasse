@@ -9,13 +9,13 @@
     <main>
         <section class="form">
             <form action="/update?m=PUT" method="post"class='login-form'>
-                <h2 class="copy-login-form">Edicion del Producto nro <%= product.id %>  </h2>
+                <h2 class="copy-login-form">Edicion del Producto: <%=product.name%> </h2>
 
                 <label for="name" class="label-forms">Nombre del producto</label>
-                <input type="text" name="name" id="name" value="Valor anterior" class="login">
+                <input type="text" name="name" id="name" value="<%= product.name %> " class="login">
 
                 <label for="description" class="label-forms">Descripción</label>
-                <input type="text" name="description" id="description" value="Valor anterior" class="login">
+                <input type="text" name="description" id="description" value="<%= product.description %> " class="login">
 
                 <label for="image" class="label-forms">Imagen</label>
                 <input type="file" name="image" id="image" class="login">
@@ -23,12 +23,16 @@
 
                 <legend for="category" class="label-forms">Categoría</legend>
                 <div class="bloque-radio">                    
-                    <label for="category-crema" class="radio">Crema</label>
-                    <input type="radio" name="category" id="category-crema" value="crema" class="radio-option">
+                    <label for="category-crema" class="radio" >Crema</label>
+                    <input type="radio" name="category" id="category-crema" value="crema" class="radio-option" <%= product.category == 'crema' ? "checked": "" %>>
                 </div>
                 <div class="bloque-radio">                    
                     <label for="category-perfume" class="radio">Perfume</label>
-                    <input type="radio" name="category" id="category-perfume" value="perfume" class="radio-option">
+                    <input type="radio" name="category" id="category-perfume" value="perfume" class="radio-option" <%= product.category == 'perfume' ? "checked": "" %>>
+                </div>
+                <div class="bloque-radio">                    
+                    <label for="category-perfume" class="radio">Kit</label>
+                    <input type="radio" name="category" id="category-kit" value="kit" class="radio-option" <%= product.category == 'kit' ? "checked": "" %>>
                 </div>
 
 
@@ -36,7 +40,9 @@
                 <input type="text" name="fragrancies" id="fragrancies" value="Valor anterior" class="login">
 
                 <label for="price" class="label-forms">Precio</label>
-                <input type="text" name="price" id="price" value="Valor anterior" class="login">
+                <input type="text" name="price" id="price" value="<%= (product.price).slice(4) %> " class="login">
+
+                <input type="hidden" name="id" value="<%= product.id %> ">
 
                 <button type="submit" class="button-login">Enviar</button>
             </form>

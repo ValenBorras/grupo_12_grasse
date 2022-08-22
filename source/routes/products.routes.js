@@ -6,9 +6,9 @@ const upload = require('../middlewares/multer');
 
 router.get('/', controller.index);
 
-router.get("/detalle/:product", controller.detail);
+router.get("/home/detail/:product", controller.detail);
 
-router.get("/home/carrito", controller.carrito);
+router.get("/carrito", controller.carrito);
 
 router.get("/create", controller.create);
 
@@ -17,5 +17,7 @@ router.post('/save', upload.single('img'), controller.createProcess);
 router.get('/home/detail/edit/:product', controller.edit);
 
 router.put('/update', upload.single('img'), controller.editProcess);
+
+router.delete('/detail/remove', controller.remove);
 
 module.exports = router;  

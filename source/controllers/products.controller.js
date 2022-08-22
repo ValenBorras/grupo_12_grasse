@@ -1,4 +1,6 @@
 const {all,one,generate, write} = require("../models/products.model");
+const {unlinkSync} = require('fs');
+const {resolve,path} = require('path');
 
 const controller = {
 
@@ -8,11 +10,12 @@ const controller = {
     },
     
     detail: (req,res) => {
-        let product = one(req.params.producto);
+        let product = one(req.params.product);
         if(product){
             return res.render('products/detail',{product});
-        }
-        return res.render('products/detail', {product:null});
+        }else{
+        return res.render('products/detail', {product:null})
+        };
     },
 
     carrito : (req,res)=> {
@@ -25,6 +28,7 @@ const controller = {
 
     createProcess: (req,res) => {
         let nuevo = generate(req.body)
+        nuevo.img = '/users/' + req.file.filename
         let todos = all()
         todos.push(nuevo)
         write(todos)
@@ -38,48 +42,34 @@ const controller = {
 
     editProcess: (req,res)=>{
         let todos = all();
-        let actualizados = todos.map(elemento => {
-            if(elemento.id == req.body.id){
-                elemento.name = req.body.name;
-                elemento.price = parseInt(req.body.price);
-                elemento.category = req.body.category;
-                elemento.image = req.files && req.files.length > 0 ? req.files[0].filename : elemento.image;
-                let product = one(req.body.id);
-                if(product.image != 'default.png'){
+        let actualizados = todos.map(e => {
+            if(e.id == req.body.id){
+                e.name = req.body.name;
+                e.price = 'COP$' + parseInt(req.body.price);
+                e.category = req.body.category;
+                e.img = req.file ? '/users/' + req.file.filename : e.img;
+/*                 let product = one(req.body.id);
+                if(product.img != 'default.png'){
                     let file = resolve(__dirname,'..','..','public','products',product.image);
                     unlinkSync(file);
-                }
+                } */
             }
-            return elemento
+            return e
         })
         write(actualizados)
         return res.redirect('/')
+    },
+    remove: (req,res)=>{
+/*         let product = one(req.params.product);
+        if(product.image != 'default.png'){
+            let file = resolve(__dirname,'..','..','public','products',product.image);
+            unlinkSync(file);
+        } */
+        let todos = all();
+        let noEliminados = todos.filter(e => e.id != req.body.id)
+        write(noEliminados);
+        return res.redirect('/')
     }
-    
-    /*index: (req,res) => {
-
-        let products = all()
-
-        if(req.params.categoria) {
-            products = products.filter(e => e.category == req.params.controller)
-            return res.render("list")
-        }
-    },
-    show: (req,res)=> {
-        let product = one(req.params.producto)
-        if(product) {
-            return res.render("detail",{product})
-        }
-        return res.render("detail",{product:null})
-    },
-    
-    save: (req,res) => {
-        let nuevo = generate(req.body)
-        let todos = all()
-        todos.push(nuevo)
-        write(todos)
-        return res.redirect("/productos")
-    }*/
 }
 
 module.exports = controller;

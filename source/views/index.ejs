@@ -93,49 +93,28 @@
                         No hay productos
                      </h2>
                 <% } %>
-
-<!--                 <a href="/Detalle">
-                    <section class="caja-general">
-                        
-                        <div class="caja-imagen"><img class="imagenes" src="/images/Crema-280gr.png" alt=""></div>
-                        <div class="caja">
-                            <p class="nombre-producto">Crema Hidratante y Nutritiva Grasse 280g</p>
-                            <p class="precio">COP$39.999</p>
-                        </div>
-                    </section>
-                </a>
-
-                <a href="/Detalle">
-                    <section class="caja-general">
-                        <div class="caja-imagen"><img class="imagenes" src="/images/Crema-85g.png" alt=""></div>
-                        <div class="caja">
-                            <p class="nombre-producto">Crema Hidratante y Nutritiva Grasse 85g</p>
-                            <p class="precio">COP$19.999</p>
-                        </div>
-                    </section>
-                </a>
-
-                <a href="/Detalle">
-                    <section class="caja-general">
-                        <div class="caja-imagen"><img class="imagen-perfume100" src="/images/Perfume.png" alt=""></div>
-                        <div class="caja">
-                            <p class="nombre-producto">Perfume Grasse 100ml</p>
-                            <p class="precio">COP$59.999</p>
-                        </div>
-                    </section>
-                </a>
-
-                <a href="/Detalle">
-                    <section class="caja-general">
-                        <div class="caja-imagen"><img class="imagen-perfume50" src="/images/Perfume-50ml.png" alt=""></div>
-                        <div class="caja">
-                            <p class="nombre-producto">Perfume Grasse 50ml</p>
-                            <p class="precio">COP$39.999</p>
-                        </div>
-                    </section>
-                </a> -->
-
             </article>
+            <% let crema = products.filter(e => e.category === 'crema'); if(crema.length > 0){ %> 
+                <section id=Tienda >
+                    <h3 class="title-tienda">Cremas</h3>
+                </section>
+            <article class="caja-tienda">
+                        <% crema.forEach(element => { %> 
+                            <%- include('./partials/product.ejs',{element:element})  %> 
+                        <% }) %>
+            </article>
+            <% } %>
+            <% let perfumes = products.filter(e => e.category === 'perfume'); if(perfumes.length > 0){ %> 
+                <section id=Tienda >
+                    <h3 class="title-tienda">Perfumes</h3>
+                </section>
+            <article class="caja-tienda">
+                        <% perfumes.forEach(element => { %> 
+                            <%- include('./partials/product.ejs',{element:element})  %> 
+                        <% }) %>
+            </article>
+            <% } %>
+
 
             <section class="section-catalogo">
                 <div class="caja-catalogo">

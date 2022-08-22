@@ -7,16 +7,19 @@
 <body>
     <%- include ('../partials/header.ejs') %>
     <main>
-        
+        <% if(product){ %> 
         <article class="detail-box">
             <section class="caja-img-producto">
-                <img class="img-producto" src="/images/Crema-280gr.png" alt="">
+                <img class="img-producto" src="<%= product.img %> " alt="">
             </section>
 
             <section class="info-producto">
                 <div class="bloque-info-1">
-                    <p class="title-product">Crema Hidratante y Nutritiva 280g</p>
-                    <p class="precio-producto">COP$39.999</p>
+                    <p class="title-product"><%= product.name %> </p>
+                    <p class="precio-producto"><%= product.price %> </p>
+                </div>
+                <div class="bloque-info-1">
+                    <p class="precio-product"><%= product.description %> </p>
                 </div>
                 <div class="bloque-info-2">
 
@@ -35,15 +38,37 @@
                 </div>
                 <section class="cart-block">
                     <div class="go-cart">
-                        <a href="/carrito"><p>Agregar al carrito</p></a>
+                        <a href="/carrito">
+                            <button type="submit" class='go-cart'>Agregar al carrito</button>
+                        </a>
                     </div>
                 </section>    
                 <div class="low-info">
                     <p>Cuida tu piel y deja que los demás lo sientan</p>
                     <p>Hecho en Colombia</p>
                 </div>
+
+                <section class="cart-block">
+                    <div class="go-cart">
+                        <a href="/home/detail/edit/<%=product.id%>">
+                            <button type="submit" class='go-cart'>Editar Producto</button>
+                        </a>
+                    </div>
+                </section> 
+                <section class="cart-block">
+                    <form action="/detail/remove?m=DELETE" method="post">
+                        <input type="hidden" name="id" value="<%= product.id %> ">
+                        <button type="submit" class='go-cart'>Eliminar Producto</button>
+                    </form>
+                </section> 
+
             </section>
         </article>   
+        <% }else{%>
+        <section>
+            <h2>No se encontro el producto</h2>
+        </section>
+        <% } %> 
 
     </main>
     <%- include ('../partials/footer.ejs') %> 
