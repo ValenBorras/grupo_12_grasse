@@ -30,6 +30,13 @@
     transition: background-size .4s;
     padding-bottom: 0.3rem;
     cursor: pointer;
+    font-weight:lighter;
+}
+
+.navbar-tienda ul a {
+    color:#A87F70;
+    text-decoration: none;
+    font-weight:400;
 }
 
 
