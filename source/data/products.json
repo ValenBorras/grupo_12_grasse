@@ -1,9 +1,9 @@
 [
   {
-    "name": "Crema Hidratante       ",
+    "name": "Crema Hidratante y Nutritiva Grasse 280g ",
     "category": "crema",
     "presentation": "280g",
-    "price": "COP$39000",
+    "price": "COP$39.999",
     "description": "Cuida tu piel y deja que los demás lo sientan",
     "img": "/images/Crema-280gr.png",
     "id": 1
@@ -13,7 +13,7 @@
     "category": "crema",
     "presentation": "85g",
     "price": "COP$21.999",
-    "description": "lleva tu crema corporal a todas partes en tu bolso",
+    "description": "Lleva tu crema corporal a todas partes en tu bolso",
     "img": "/images/Crema-85g.png",
     "id": 2
   },
@@ -41,16 +41,16 @@
     "presentation": "100ml y 280g",
     "price": "COP$82.999",
     "description": "",
-    "img": "",
+    "img": "/images/kit-crema-y-perfume-grandes.png",
     "id": 5
   },
   {
     "name": "Kit - Perfume 50ml y Crema Hidratante y Nutritiva 85g    ",
     "category": "kit",
     "presentation": "50ml y 85g",
-    "price": "COP$89999",
+    "price": "COP$49.999",
     "description": "",
-    "img": "",
+    "img": "/images/kit-crema-y-perfume-pequeños.png",
     "id": 6
   }
 ]

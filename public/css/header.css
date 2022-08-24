@@ -276,6 +276,10 @@ header {
         margin-bottom: 0rem;
     }
 
+    .login-navbar a {
+        color: white;
+    }
+
     .busqueda {
         display: flex;
         align-items: center;

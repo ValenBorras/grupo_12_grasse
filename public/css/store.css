@@ -1,15 +1,45 @@
 
-
-
 #Tienda {
     color:#A87F70;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: CENTER;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left:2rem;
     padding-right:2rem;
     align-items: center;
+    gap: 1.8rem;
+}
+
+.navbar-tienda ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    font-size: 18px;
+    padding-left: 0rem;
+    width: 100vw;
+}
+
+.navbar-tienda ul li {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+
+.navbar-tienda ul li:hover, .navbar-tienda ul li:focus {
+    background-size: 100% 2px;
+    color:#A87F70;
+}
+
+.navbar-tienda li {
+    list-style-type: none;
 }
 
 .arrow {
@@ -24,6 +54,8 @@
     justify-content: center;
     font-size: 26px;
     font-weight: 600;
+    position: relative;
+    left:10px;
 }
 
 
