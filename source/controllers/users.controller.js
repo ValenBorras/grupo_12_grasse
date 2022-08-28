@@ -47,7 +47,10 @@ const controller = {
                 }
             }
         })
-    }    
+    },
+    profile: (req, res)=>{
+        return res.render('users/profile')
+    }
 }
 
 module.exports = controller;
