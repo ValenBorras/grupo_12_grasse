@@ -271,14 +271,64 @@ header {
         align-items: center;
         list-style: none;
         color: white;
-        justify-content: flex-end;
-        width: 20%;
+        justify-content: center;
+        width: 25%;
         margin-bottom: 0rem;
+        gap: 0.5rem;
     }
 
     .login-navbar a {
         color: white;
     }
+
+     /* Menu Desplegable */ 
+
+     .desplegable {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0.7rem;
+    }
+
+    .login-navbar li ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3.2rem;
+        position: absolute;
+    }
+
+    .login-navbar li ul li {
+        display: block;
+        background-color: #A87F70;;
+        width: 200px;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: relative;
+        right: 80px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .login-navbar li ul li a{
+        color: white;
+    }
+
+    
+    .login-navbar li ul  {
+        display: none;
+    }
+
+    .login-navbar li:hover >  ul {
+        display: block;
+    }
+    
+
+    .login-navbar li ul li:hover {
+        background-color: #B68778;
+    }
+
+    /* Termina menu desplegable */
 
     .busqueda {
         display: flex;
@@ -308,6 +358,7 @@ header {
     .barra-busqueda:focus {
         outline: none;
     }
+
 
     ul li a {
         text-decoration: none;

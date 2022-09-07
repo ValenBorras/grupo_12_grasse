@@ -16,59 +16,43 @@
                 </p>
             </div>
         </section>
-
-        
-        <section class="preguntas-frecuentes">
-          
-            <div class="bloque-pregunta">
-                <div class="pregunta">
-                    <p class="text-pregunta">¿QUÉ INGREDIENTES TIENEN LAS CREMAS?</p>
-                    <div class="arrow"><i class="fa-solid fa-arrows-up-down"></i></div>
+        <section class="acordeon-section">   
+            <div class="acordeon">
+                <div class="content-box">
+                    <div class="label">¿Qué ingredientes tienen las cremas?</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ullam sunt consequuntur porro, mollitia deserunt distinctio aliquid natus officia hic nam, exercitationem quia dolor aperiam inventore at sequi repudiandae voluptas.</p>
+                    </div>
                 </div>
-                <div class="text-info">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique doloremque voluptatibus a asperiores facilis placeat ullam id quae ea laudantium, ex quos fuga dolore accusamus excepturi illum! Repudiandae, quae?</p>
+                <div class="content-box">
+                    <div class="label">¿Cuáles son los beneficios para la piel?</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ullam sunt consequuntur porro, mollitia deserunt distinctio aliquid natus officia hic nam, exercitationem quia dolor aperiam inventore at sequi repudiandae voluptas.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="bloque-pregunta">
-                <div class="pregunta">
-                    <p class="text-pregunta">¿CUÁLES SON LOS BENEFICIOS PARA LA PIEL?</p>
-                    <div class="arrow"><i class="fa-solid fa-arrows-up-down"></i></div>
+                <div class="content-box">
+                    <div class="label">¿Cuánto perdura la fragancia de la crema?</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ullam sunt consequuntur porro, mollitia deserunt distinctio aliquid natus officia hic nam, exercitationem quia dolor aperiam inventore at sequi repudiandae voluptas.</p>
+                    </div>
                 </div>
-                <div class="text-info">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique doloremque voluptatibus a asperiores facilis placeat ullam id quae ea laudantium, ex quos fuga dolore accusamus excepturi illum! Repudiandae, quae?</p>
-                </div>
-            </div>
-
-            <div class="bloque-pregunta">
-                <div class="pregunta">
-                    <p class="text-pregunta">¿CUÁNTO PERDURA LA FRAGANCIA DE LA CREMA?</p>
-                    <div class="arrow"><i class="fa-solid fa-arrows-up-down"></i></div>
-                </div>
-                <div class="text-info">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique doloremque voluptatibus a asperiores facilis placeat ullam id quae ea laudantium, ex quos fuga dolore accusamus excepturi illum! Repudiandae, quae?</p>
+                <div class="content-box">
+                    <div class="label">¿Cuánto tarda el envío?</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ullam sunt consequuntur porro, mollitia deserunt distinctio aliquid natus officia hic nam, exercitationem quia dolor aperiam inventore at sequi repudiandae voluptas.</p>
+                    </div>
                 </div>
             </div>
+        </section> 
+        <script>
+            const acordeon = document.getElementsByClassName("content-box");
 
-            <div class="bloque-pregunta">
-                <div class="pregunta">
-                    <p class="text-pregunta">¿CUÁNTO TARDA EL ENVÍO?</p>
-                    <div class="arrow"><i class="fa-solid fa-arrows-up-down"></i></div>
-                </div>
-                <div class="text-info">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique doloremque voluptatibus a asperiores facilis placeat ullam id quae ea laudantium, ex quos fuga dolore accusamus excepturi illum! Repudiandae, quae?</p>
-                </div>
-            </div>
-
-
-
-        </section>
-
-        
-            
-            
-        
-        
+            for (i = 0; i < acordeon.length; i++) {
+                acordeon[i].addEventListener("click", function() {
+                    this.classList.toggle("active")
+                })
+            }
+        </script>
 
     </main>
     <%- include ('./partials/footer.ejs') %> 

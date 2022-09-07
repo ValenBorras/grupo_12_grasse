@@ -21,10 +21,10 @@
 
     <nav class="barra-inicio">
 
-        <form class="busqueda"> 
+        <form class="busqueda" action="/" method="GET"> 
             <label for="barra-busqueda"></label>
             <input class="barra-busqueda" type="text" placeholder="">
-        </form>
+        </form> 
 
         <ul class="site">
 
@@ -43,13 +43,19 @@
         </ul>
 
     
-        <ul class="login-navbar">
+        <div class="login-navbar">
             <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
             <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li> 
             <li><a href="/login"><i class="fa-regular fa-user"></i></a></li>
             <li><a href="/register"><i class="fa-solid fa-address-card"></i></a></li>
-            <li><a href="/create"><i class="fa-solid fa-circle-plus"></i></a></li> 
-        </ul>
+            <li class="desplegable"><i class="fa-solid fa-circle-plus"></i></a>
+                <ul>
+                    <li><a href="/create">Crear Producto</a></li>
+                    <li><a href="/edit">Editar Producto</a></li>
+                    <li><a href="/">Crear Testimonio</a></li>
+                </ul>
+            </li> 
+        </div>
 
     </nav>  
 </header>

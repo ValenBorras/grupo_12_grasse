@@ -113,6 +113,8 @@
     transform: scale(1.05);
 }
 
+/*fin animación*/
+
 a {
     text-decoration: none;
 }
@@ -246,7 +248,8 @@ a {
     .arrow {
         font-size: 33px;
     }
-    
+    /* inicio grid dependiendo de categorias tienda */
+
     .caja-tienda {
         display: grid;
         grid-template-columns: 20vw 20vw 20vw 20vw;
@@ -254,6 +257,28 @@ a {
         justify-content: space-around;
         padding-bottom: 0rem;
     }
+
+    .caja-tienda-cremas {
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        min-width: auto;
+        justify-content: center;
+        padding-bottom: 0rem;
+        gap: 3rem;
+    }
+
+    .caja-tienda-perfumes {
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        min-width: auto;
+        justify-content: center;
+        padding-bottom: 0rem;
+        gap: 3rem;
+    }
+
+    /* fin grid dependiendo de categorias tienda */
+
+    
 
     .caja-imagen {
         width: 20vw;
