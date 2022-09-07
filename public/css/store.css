@@ -276,9 +276,16 @@ a {
         gap: 3rem;
     }
 
-    /* fin grid dependiendo de categorias tienda */
+    .caja-tienda-kits {
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        min-width: auto;
+        justify-content: center;
+        padding-bottom: 0rem;
+        gap: 3rem;
+    }
 
-    
+    /* fin grid dependiendo de categorias tienda */
 
     .caja-imagen {
         width: 20vw;
