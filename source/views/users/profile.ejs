@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include ('../partials/head.ejs') %> 
-    <title>Perfil de usuario - Grasse</title>
+    <%- include ('../partials/head.ejs') %>
+        <title>Perfil de usuario - Grasse</title>
 </head>
+
 <body>
-    <%- include ('../partials/header.ejs') %> 
-    <main>
-        
-    </main>
-    <%- include ('../partials/footer.ejs') %> 
+    <%- include ('../partials/header.ejs') %>
+        <main class="profile-container">
+
+            <div class="profile-header-container">
+                <img src="/users/default-profile-img.jpg" class="user-img">
+                <p class="user-name">Nombre Usuario</p>
+            </div>
+
+            <div class="profile-body-container">
+                <form action="#">
+                    <div class="data-container">
+                        <label for="email" class="user-data">Actualizar e-mail:</label>
+                        <p>
+                            <input type="email" value="loremipsum@gmail.com" name="email" class="user-input"/>
+                        </p>
+                    </div>
+
+                    <div class="data-container">
+                        <label for="password" class="user-data">Actualizar contraseña:</label>
+                        <p>
+                            <input type="password" placeholder="Contraseña nueva" name="password" class="user-input"/>
+                        </p>
+                    </div>
+
+                    <div class="data-container">
+                        <label for="passwordVerify" class="user-data">Confirmar contraseña:</label>
+                        <p>
+                            <input type="password" placeholder="Repetir contraseña" name="passwordVerify" class="user-input"/>
+                        </p>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="submit" class="profile-btn">
+                            Actualizar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <%- include ('../partials/footer.ejs') %>
 </body>
+
 </html>
