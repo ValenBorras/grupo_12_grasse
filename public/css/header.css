@@ -21,7 +21,9 @@ header {
 
 .circulo{
     color: #A87F70;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 13px;
     padding: 0 5px;
     width: 18px;
@@ -38,11 +40,11 @@ header {
     margin: 0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-navbar i{
-    margin-top:1px;
-}
+
 
 .encabezado{
     font-size: 11px;
@@ -281,23 +283,65 @@ header {
         color: white;
     }
 
-     /* Menu Desplegable */ 
+    .p-user {
+        font-size: 14px;
+        padding-top: 4px;
+    }
 
-     .desplegable {
+    .user {
+        font-size: 25px;
+        margin-right: 5px;
+        display: flex;
+        gap: 0.3rem;
+    }
+
+    /* Menu Desplegable Usuario */
+
+    .ul-user {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3.5rem;
+        position: absolute;
+    }
+
+    .ul-user li {
+        display: block;
+        background-color: #A87F70;;
+        width: 200px;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        position: relative;
+        right: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .ul-user li a {
+        color: white;
+    }
+
+    /* Fin menu desplegable */
+
+
+
+    /* Menu Desplegable Add */ 
+
+    .desplegable {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-left: 0.7rem;
     }
 
-    .login-navbar li ul {
+    .ul-add {
         display: flex;
         flex-direction: column;
         padding-top: 3.2rem;
         position: absolute;
     }
 
-    .login-navbar li ul li {
+    .ul-add li {
         display: block;
         background-color: #A87F70;;
         width: 200px;
@@ -310,7 +354,7 @@ header {
         text-transform: uppercase;
     }
 
-    .login-navbar li ul li a{
+    .ul-add li a {
         color: white;
     }
 
@@ -382,7 +426,8 @@ header {
         padding: 0.3rem 1rem; 
         background-color: #A87F70;
     }
- 
+    
+    
 
    
 }

@@ -1,12 +1,11 @@
 [
- {
+    {
   "id": 1,
   "name": "Esteban",
   "surname": "Molina",
   "email": "molii.esteban@gmail.com",
-  "password": "Ares442*",
-  "category": "Usuario",
-  "img": "/images/227.jpg"
+  "password": "$2a$10$SNe14AnpfEZkjtwFk82zvOJkX9zZmLltad1ObYZ5JRLS1m5ie04Uu",
+  "img": "img-1662612040676-429105084.jpg"
  },
  {
   "id": 2,
@@ -35,4 +34,6 @@
   "category": "Administrador",
   "img": ""
  }
+ 
+ 
 ]

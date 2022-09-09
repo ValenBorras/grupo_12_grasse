@@ -140,13 +140,29 @@ margin-bottom: 15px;
 }
 
 .error{
-    flex: 0 0 100%;
+    display: block;
     color: orange;
     padding: 3px 8px;
-    margin-top: 8px;
-    margin-bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 13px;
 }
+
+.recordar-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    gap: 1rem;
+    color:#b68778
+}
+
+#rem-user {
+    margin-top: 0;
+    width: 1rem;
+}
+
 
 @media (min-width: 769px){
     .copy-login-form{
@@ -193,4 +209,6 @@ margin-bottom: 15px;
         font-size: 30px;
         line-height: 1.5;
     }
+
+    
 }

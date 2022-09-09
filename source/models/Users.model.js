@@ -51,8 +51,11 @@ const User = {
     delete: function(id){
         let allUsers = User.all();
         let finalUsers = allUsers.filter(e => e.id !== id );
-        fs.writeFileSync(User.FileName, JSON.stringify(finalUsers, null, ' '))
+        fs.writeFileSync(User.FileName, JSON.stringify(finalUsers, null, ' '));
+        return true;
     }
 }
 
 module.exports = User; 
+
+

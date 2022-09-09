@@ -4,6 +4,7 @@ const bcryptjs = require('bcryptjs');
 
 const controller = {
     register:(req,res)=>{
+        res.cookie("")
         return res.render('users/register')
     },
     
@@ -18,7 +19,7 @@ const controller = {
         })
     }
 
-     let userToCreate = {
+    let userToCreate = {
         ...req.body,
         password: bcryptjs.hashSync(req.body.password,10),
         img: req.file.filename,
@@ -27,7 +28,7 @@ const controller = {
 
     let userCreated = User.create(userToCreate);
 
-    res.redirect('/login')    
+    res.redirect('/Ingreso')    
     },
 
     login: (req,res)=>{
@@ -38,8 +39,22 @@ const controller = {
      let userToLogin = User.findByField('email', req.body.email);
 
      if(userToLogin){
-
+        let isOkThePassword =bcryptjs.compareSync(req.body.password,userToLogin.password);
+        if (isOkThePassword){
+            delete userToLogin.password;
+            req.session.userLogged = userToLogin;
+            return res.redirect("/Perfil")
+        }
+        return res.render('users/login',{
+            errors:{
+                password:{
+                    msg:'La contraseña es incorrecta'
+                }
+            }
+        });
      }
+
+
         return res.render('users/login',{
             errors:{
                 email:{
@@ -49,7 +64,13 @@ const controller = {
         })
     },
     profile: (req, res)=>{
-        return res.render('users/profile')
+        return res.render('users/profile', {
+            user: req.session.userLogged
+        }) 
+    },
+    logout: (req,res) => {
+        req.session.destroy();
+        return res.redirect("/");
     }
 }
 

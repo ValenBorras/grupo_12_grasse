@@ -8,9 +8,9 @@ router.get('/', controller.index);
 
 router.get("/home/detail/:product", controller.detail);
 
-router.get("/carrito", controller.carrito);
+router.get("/Carrito", controller.carrito);
 
-router.get("/create", controller.create);
+router.get("/Crear-producto", controller.create);
 
 router.post('/save', upload.single('img'), controller.createProcess);
 
