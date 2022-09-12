@@ -6,33 +6,6 @@
   "email": "molii.esteban@gmail.com",
   "password": "$2a$10$SNe14AnpfEZkjtwFk82zvOJkX9zZmLltad1ObYZ5JRLS1m5ie04Uu",
   "img": "img-1662612040676-429105084.jpg"
- },
- {
-  "id": 2,
-  "name": "Tadeo",
-  "surname": "Pavicich",
-  "email": "tadeopavicich@gmail.com",
-  "password": "Aguante_independiente",
-  "category": "Administrador",
-  "img": "/images/imgTadeo.jpg"
- },
- {
-  "id": 3,
-  "name": "Joaquin",
-  "surname": "Benitez",
-  "email": "benitez.e.joaquin@gmail.com",
-  "password": "Contraseña123",
-  "category": "Administrador",
-  "img": ""
- },
- {
-  "id": 4,
-  "name": "Valentina",
-  "surname": "Borras",
-  "email": "mvalentina.borras@gmail.com",
-  "password": "bocamipasion",
-  "category": "Administrador",
-  "img": ""
  }
  
  
