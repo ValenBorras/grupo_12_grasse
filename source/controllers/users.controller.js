@@ -3,9 +3,9 @@ const {validationResult} = require('express-validator');
 const bcryptjs = require('bcryptjs');
 
 const controller = {
-    register:(req,res)=>{
-        res.cookie("")
-        return res.render('users/register')
+
+    register: (req,res) => {
+        return res.render('users/register');
     },
     
     processRegister:(req,res)=>{
@@ -43,6 +43,11 @@ const controller = {
         if (isOkThePassword){
             delete userToLogin.password;
             req.session.userLogged = userToLogin;
+
+           if(req.body.remUser) {
+                res.cookie("userEmail",req.body.email, {maxAge:(1000 * 60) * 2})
+            }
+            
             return res.redirect("/Perfil")
         }
         return res.render('users/login',{
@@ -53,8 +58,6 @@ const controller = {
             }
         });
      }
-
-
         return res.render('users/login',{
             errors:{
                 email:{
@@ -69,6 +72,7 @@ const controller = {
         }) 
     },
     logout: (req,res) => {
+        res.clearCookie("userEmail");
         req.session.destroy();
         return res.redirect("/");
     }

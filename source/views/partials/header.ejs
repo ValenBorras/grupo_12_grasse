@@ -55,10 +55,6 @@
                 </li>
                 <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
                 <li><a href="/Carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
-            <% } else { %>
-                <li><a href="/Carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li> 
-                <li><a href="/Ingreso"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href="/Registro"><i class="fa-solid fa-address-card"></i></a></li>
                 <li class="desplegable"><i class="fa-solid fa-circle-plus"></i>
                     <ul class="ul-add">
                         <li><a href="/Crear-Producto">Crear Producto</a></li>
@@ -66,6 +62,11 @@
                         
                     </ul>
                 </li>
+            <% } else { %>
+                <li><a href="/Carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li> 
+                <li><a href="/Ingreso"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="/Registro"><i class="fa-solid fa-address-card"></i></a></li>
+                
             <% } %> 
         </div>
 
