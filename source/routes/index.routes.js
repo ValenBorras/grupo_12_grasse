@@ -3,8 +3,8 @@ const router = Router();
 const controller = require('../controllers/index.controller')
 
 
-router.get("/Testimonios", controller.testimonios);
-router.get("/Preguntas-frecuentes", controller.faqs);
+router.get("/testimonios", controller.testimonios);
+router.get("/preguntas", controller.faqs);
 
 
 module.exports = router;

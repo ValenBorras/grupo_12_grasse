@@ -1,12 +1,18 @@
 [
-    {
+ {
   "id": 1,
   "name": "Esteban",
   "surname": "Molina",
   "email": "molii.esteban@gmail.com",
   "password": "$2a$10$SNe14AnpfEZkjtwFk82zvOJkX9zZmLltad1ObYZ5JRLS1m5ie04Uu",
   "img": "img-1662612040676-429105084.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Admin",
+  "surname": "Grasse",
+  "email": "admin@grasse.com.co",
+  "password": "$2a$10$WMq04WqVJ0Ejtwm3.awm/uzUpYd2wBeaZ15hGjhRXuVxgtHTk12a2",
+  "img": "img-1663114477099-982303177.png"
  }
- 
- 
 ]

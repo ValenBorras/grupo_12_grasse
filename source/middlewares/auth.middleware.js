@@ -2,7 +2,7 @@
 
 function authMiddleware (req,res,next) {
     if (!req.session.userLogged) {
-        return res.redirect("/Ingreso")
+        return res.redirect("/ingreso")
     }
     next();
 }
