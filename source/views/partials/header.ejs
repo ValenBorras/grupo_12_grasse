@@ -53,23 +53,21 @@
                         <li><a href="/salir">Salir</a></li>
                     </ul>
                 </li>
-                <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
+                <% if (!locals.userLogged.email.includes("@grasse.com.co")) { %>
+                 <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
                 <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
-
-                
-                
+                <% } %>
+            
                 <% if (locals.userLogged.email.includes("@grasse.com.co")) { %>
 
                  <li class="desplegable"><i class="fa-solid fa-circle-plus"></i>
                     <ul class="ul-add">
                         <li><a href="/crearproducto">Crear Producto</a></li>
-                        <li><a href="/">Crear Testimonio</a></li>
-                        <li><a href="/">Agregar Post</a></li>
+                        <li><a href="/">Crear Post</a></li>
                     </ul>
                 </li>
                 <% } %>
                 
-
             <% } else { %>
                 <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li> 
                 <li><a href="/ingreso"><i class="fa-regular fa-user"></i></a></li>
@@ -77,7 +75,6 @@
                 
             <% } %> 
 
-            
         </div>
 
     </nav>  
