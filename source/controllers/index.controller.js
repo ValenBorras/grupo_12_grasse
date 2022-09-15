@@ -7,6 +7,9 @@ const controller  = {
     },
     faqs: (req,res)=> {
         res.render("faqs")
+    },
+    blog: (req,res) => {
+        res.render("blog")
     }
 }
 

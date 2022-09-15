@@ -69,6 +69,14 @@
     width: 8rem;
 }
 
+#referencia, #marca {
+    color:#A87F70
+}
+
+#marca:focus, #referencia {
+    outline: none;
+}
+
 .cart-block {
     display: flex;
     justify-content: center;
