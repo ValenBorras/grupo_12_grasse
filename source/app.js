@@ -4,6 +4,7 @@ const server = express();
 const cookies = require("cookie-parser");
 const config = require('./modules/server');
 const userLoggedMiddleware = require("./middlewares/user.logged.middleware");
+const { Sequelize } = require("sequelize");
 
 server.listen(config.port,config.start());
 const {join} = require('path');
