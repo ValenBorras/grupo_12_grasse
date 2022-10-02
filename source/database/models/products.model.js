@@ -32,7 +32,11 @@ const productsModel = function(sequelize, DataTypes){
         }
     };
     let config ={
-        timestamps: false
+        timestamps: false,
+        tableNames: 'products'
     }
+    const producto = sequelize.define(alias, cols, config);
+
+    return producto;
 }
 module.exports = productsModel
