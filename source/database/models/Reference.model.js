@@ -17,7 +17,7 @@ const referenceModel = function(sequelize, DataTypes){
     };
 let config = {
     timestamps: false,
-    tableNames: 'references'
+    tableNames: 'referencies'
 };
 const referencia = sequelize.define(alias, cols, config);
 
