@@ -35,8 +35,19 @@ const productsModel = function(sequelize, DataTypes){
         timestamps: false,
         tableNames: 'products'
     }
-    const producto = sequelize.define(alias, cols, config);
+    const product = sequelize.define(alias, cols, config);
 
-    return producto;
+    product.associate = function(models){
+        product.belongsTo(models.category, {
+            as: "category",
+            foreignKey: category_id
+        });
+        product.belongsTo(models.presentation, {
+            as: "presentation",
+            foreignKey: presentation_id
+        });
+    }
+
+    return product;
 }
 module.exports = productsModel

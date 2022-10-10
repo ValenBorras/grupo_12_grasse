@@ -15,7 +15,14 @@ let config = {
     timestamps: false,
     tableNames: 'brands'
 };
-const marca = sequelize.define(alias, cols, config);
+const brand = sequelize.define(alias, cols, config);
 
-return marca;
+brand.associate = function(models){
+    brand.hasMany(models.reference, {
+        as: "referencies",
+        foreignKey: "brand_id"
+    })
+}
+
+return brand;
 }

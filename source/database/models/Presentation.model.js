@@ -15,7 +15,14 @@ let config = {
     timestamps: false,
     tableNames: 'presentations'
 };
-const presentacion = sequelize.define(alias, cols, config);
+const presentation = sequelize.define(alias, cols, config);
 
-return presentacion;
+presentation.associate = function(models){
+    presentation.hasMany(models.product, {
+        as: "products",
+        foreignKey: presentation_id
+    });
+}
+
+return presentation;
 }

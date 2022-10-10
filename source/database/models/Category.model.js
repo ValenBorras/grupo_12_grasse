@@ -15,7 +15,14 @@ let config = {
     timestamps: false,
     tableNames: 'categories'
 };
-const categoria = sequelize.define(alias, cols, config);
+const category = sequelize.define(alias, cols, config);
 
-return categoria;
+category.associate = function(models){
+    category.hasMany(models.product, {
+        as: "products",
+        foreignKey: category_id
+    });
+}
+
+return category;
 }

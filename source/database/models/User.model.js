@@ -35,8 +35,10 @@ const usersModel = function(sequelize, DataTypes){
         timestamps: false,
         tableName: 'users'
     }
-    const usuario = sequelize.define(alias, cols, config);
+    const user = sequelize.define(alias, cols, config);
 
-    return usuario;
+    
+
+    return user;
 }
 module.exports = usersModel

@@ -19,7 +19,14 @@ let config = {
     timestamps: false,
     tableNames: 'referencies'
 };
-const referencia = sequelize.define(alias, cols, config);
+const reference = sequelize.define(alias, cols, config);
 
-return referencia;
+reference.associate = function(models){
+    reference.belongsTo(models.brand, {
+        as: "brand",
+        foreignKey: "brand_id"
+    })
+}
+
+return reference;
 }
