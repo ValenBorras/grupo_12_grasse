@@ -46,9 +46,15 @@
 }
 
 .login{
+    font-size: 16px;
     padding: 8px 8px;
     border: none;
     width: 80vw;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+    outline: none;
 }
 
 .button-login{
@@ -62,6 +68,10 @@
     width: 60vw;
     transition: all 450ms;
     margin-top: 15px;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
 }
 
 #price.login {
@@ -146,6 +156,40 @@ margin-bottom: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 13px;
+}
+
+.input-form-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.password-eye {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ojitos {
+    font-size: 14px;
+    color: #b68778;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 46%;
+    bottom: 37%;
+    opacity: 0.6;
+}
+
+#ocultar {
+    display: none;
+}
+
+#ocultar, #mostrar {
+    cursor: pointer;
 }
 
 .recordar-usuario {
