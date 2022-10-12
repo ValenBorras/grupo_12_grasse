@@ -4,12 +4,12 @@
     display: flex;
     flex-direction: column;
     justify-content: CENTER;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left:2rem;
     padding-right:2rem;
     align-items: center;
-    gap: 1.8rem;
+    gap: 1rem;
 }
 
 .navbar-tienda ul {
@@ -33,10 +33,11 @@
     font-weight:lighter;
 }
 
-.navbar-tienda ul a {
+.navbar-tienda ul li button {
     color:#A87F70;
     text-decoration: none;
     font-weight:400;
+    background-color: transparent;
 }
 
 
@@ -49,10 +50,10 @@
     list-style-type: none;
 }
 
-.arrow {
-    display:flex;
-    width: 33vw;
-    font-size: 27px;
+.products-store {
+    display: flex;
+    flex-direction: row;
+    width: 400%;
 }
 
 .title-tienda {
@@ -65,14 +66,13 @@
     left:10px;
 }
 
-
-
 .caja-tienda {
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 0rem;
+    width: 100%;
 }
 
 .imagenes {
@@ -192,7 +192,7 @@ a {
     .caja-tienda {
         display: grid;
         grid-template-columns: 40vw 40vw;
-        min-width: auto;
+        width: 100%;
         justify-content: space-around;
         padding: 5vw;
         padding-top: 0vw;
@@ -238,7 +238,7 @@ a {
 @media screen and (min-width:1279px) {
 
     #tienda {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
     
     .title-tienda {
@@ -253,7 +253,7 @@ a {
     .caja-tienda {
         display: grid;
         grid-template-columns: 20vw 20vw 20vw 20vw;
-        min-width: auto;
+        width: 25%;
         justify-content: space-around;
         padding-bottom: 0rem;
     }
@@ -261,7 +261,8 @@ a {
     .caja-tienda-cremas {
         display: grid;
         grid-template-columns: 20vw 20vw;
-        min-width: auto;
+        width: 25%;
+        padding: 0 5vw;
         justify-content: center;
         padding-bottom: 0rem;
         gap: 3rem;
@@ -270,7 +271,8 @@ a {
     .caja-tienda-perfumes {
         display: grid;
         grid-template-columns: 20vw 20vw;
-        min-width: auto;
+        width: 25%;
+        padding: 0 5vw;
         justify-content: center;
         padding-bottom: 0rem;
         gap: 3rem;
@@ -279,7 +281,8 @@ a {
     .caja-tienda-kits {
         display: grid;
         grid-template-columns: 20vw 20vw;
-        min-width: auto;
+        width: 25%;
+        padding: 0 5vw;
         justify-content: center;
         padding-bottom: 0rem;
         gap: 3rem;
