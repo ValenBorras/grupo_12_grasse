@@ -4,6 +4,13 @@ const btn_cremas = document.querySelector(".cremas-store");
 const btn_perfumes = document.querySelector(".perfumes-store");
 const btn_kits = document.querySelector(".kits-store");
 
+btn_todos.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    todos.style.marginLeft = "0%";
+    todos.style.height = "auto"
+});
+
 btn_cremas.addEventListener("click", function(e) {
     e.preventDefault();
 
@@ -25,9 +32,3 @@ btn_kits.addEventListener("click", function(e) {
     todos.style.height = "30vw"
 });
 
-btn_todos.addEventListener("click", function(e) {
-    e.preventDefault();
-
-    todos.style.marginLeft = "0%";
-    todos.style.height = "70vw"
-});
