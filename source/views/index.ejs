@@ -80,30 +80,32 @@
                 <h3 class="title-tienda">TIENDA</h3>
                 <div class="navbar-tienda">
                     <ul>
-                        <li><a href="">TODOS</a></li>
-                        <li><a href="">CREMAS</a></li>
-                        <li><a href="">PERFUMES</a></li>
-                        <li><a href="">KITS</a></li>
+                        <li><button class="todos-store">TODOS</button></li>
+                        <li><button class="cremas-store">CREMAS</button></li>
+                        <li><button class="perfumes-store">PERFUMES</button></li>
+                        <li><button class="kits-store">KITS</button></li>
                     </ul>
                 </div>    
             </section>
+            <section class="contenedor-store">
+                <div class="products-store">
+                    <article class="caja-tienda">
+                        
+                        <% if (products.length > 0) { %>
+                            
+                                <% products.forEach(element => { %> 
+                                    <%- include('./partials/product.ejs',{element:element})  %> 
+                                <% }) %>
+                            
+                        <% } else { %>
+                            <h2> 
+                                No hay productos
+                            </h2>
+                        <% } %>
+                        
+                    </article>
 
-            <article class="caja-tienda">
-                
-                <% if (products.length > 0) { %>
-                    
-                        <% products.forEach(element => { %> 
-                            <%- include('./partials/product.ejs',{element:element})  %> 
-                        <% }) %>
-                    
-                <% } else { %>
-                     <h2> 
-                        No hay productos
-                     </h2>
-                <% } %>
-            </article>
-
-            <% let crema = products.filter(e => e.category_id == 1); if(crema.length > 0){ %> 
+            <% let crema = products.filter(e => e.category_id === 1); if(crema.length > 0){ %> 
                 <section id=tienda >
                     <h3 class="title-tienda">Cremas</h3>
                 </section>
@@ -170,5 +172,8 @@
 
         </main>
         <%- include ('./partials/footer.ejs') %> 
+
+        <!-- Movimiento de categorias Store -->
+        <script src="/movimientoStore.js"></script>
     </body>
 </html>

@@ -79,10 +79,10 @@
 .middle-menu {
     display: flex;
     flex-direction: column;
-    padding:4vw;
+    padding:2vw;
     align-items: center;
-    margin: 4vh 4vw;
-    gap:3rem;
+    margin: 2vh 2vw;
+    gap:1rem;
     margin-bottom: 0vw;
 }
 

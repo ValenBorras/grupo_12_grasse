@@ -12,16 +12,22 @@
                 <h2 class="copy-login-form"> ¡Hola! Para seguir, ingresa tu email y contraseña </h2>
                 <div>
                    <input type="text" name="email" id="email" class="login" placeholder="Ingresa tu email">
-                <% if (locals.errors && locals.errors.email){ %>
+                    <% if (locals.errors && locals.errors.email){ %>
 
-                    <p class="error">
-                        <%= locals.errors.email.msg %>
-                    </p>
+                        <p class="error">
+                            <%= locals.errors.email.msg %>
+                        </p>
 
-                <% } %>
+                    <% } %>
                 </div>
-                <div>
-                    <input type="password" name="password" id="password" class="login" placeholder="Contraseña">
+                <div class="input-form-text">
+                    <div class="password-eye">
+                        <input type="password" name="password" id="contrase" class="login" placeholder="Contraseña">
+                        <span class="ojitos" onclick="mostrarContra()">
+                            <i id="ocultar" class="fa fa-eye" title="Ocultar contraseña"></i>
+                            <i id="mostrar" class="fa fa-eye-slash" title="Mostrar contraseña"></i>
+                        </span>
+                    </div>    
                     <% if (locals.errors && locals.errors.password){ %>
 
                         <p class="error">
@@ -42,5 +48,24 @@
         </section>
     </main>
     <%- include ('../partials/footer.ejs') %> 
+
+    <!-- js ojo de contraseña-->
+    <script>
+        function mostrarContra() {
+            var x = document.getElementById("contrase");
+            var y = document.getElementById("ocultar");
+            var z = document.getElementById("mostrar");
+
+            if (x.type =="password") {
+                x.type="text";
+                y.style.display="block";
+                z.style.display="none"
+            }else {
+                x.type="password";
+                y.style.display="none";
+                z.style.display="block"
+            }
+        }
+    </script>
 </body>
 </html>
