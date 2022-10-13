@@ -53,12 +53,13 @@
                         <li><a href="/salir">Salir</a></li>
                     </ul>
                 </li>
-                <% if (!locals.userLogged.email.includes("@grasse.com.co")) { %>
+
+                <% if (locals.userLogged.admin == 0) { %>
                  <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
                 <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
                 <% } %>
             
-                <% if (locals.userLogged.email.includes("@grasse.com.co")) { %>
+                <% if (locals.userLogged.admin == 1) { %>
 
                  <li class="desplegable"><i class="fa-solid fa-circle-plus"></i>
                     <ul class="ul-add">

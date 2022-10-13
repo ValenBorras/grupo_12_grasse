@@ -103,7 +103,7 @@
                 <% } %>
             </article>
 
-            <% let crema = products.filter(e => e.category === 'crema'); if(crema.length > 0){ %> 
+            <% let crema = products.filter(e => e.category_id == 1); if(crema.length > 0){ %> 
                 <section id=tienda >
                     <h3 class="title-tienda">Cremas</h3>
                 </section>
@@ -114,7 +114,7 @@
             </article>
             <% } %>
 
-            <% let perfumes = products.filter(e => e.category === 'perfume'); if(perfumes.length > 0){ %> 
+            <% let perfumes = products.filter(e => e.category_id == 2); if(perfumes.length > 0){ %> 
                 <section id=tienda >
                     <h3 class="title-tienda">Perfumes</h3>
                 </section>
@@ -125,7 +125,7 @@
             </article>
             <% } %>
 
-            <% let kits = products.filter(e => e.category === 'kit'); if(kits.length > 0){ %> 
+            <% let kits = products.filter(e => e.category_id == 3); if(kits.length > 0){ %> 
                 <section id=tienda >
                     <h3 class="title-tienda">Kits</h3>
                 </section>

@@ -1,5 +1,5 @@
-const referenceModel = function(sequelize, DataTypes){
-    let alias = "reference";
+module.exports = function(sequelize, DataTypes){
+    let alias = "Reference";
     let cols = {
         id:{
             type: DataTypes.INTEGER,
@@ -22,7 +22,7 @@ let config = {
 const reference = sequelize.define(alias, cols, config);
 
 reference.associate = function(models){
-    reference.belongsTo(models.brand, {
+    reference.belongsTo(models.Brand, {
         as: "brand",
         foreignKey: "brand_id"
     })

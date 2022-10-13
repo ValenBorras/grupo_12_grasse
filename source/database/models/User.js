@@ -1,5 +1,5 @@
-const usersModel = function(sequelize, DataTypes){
-    let alias = "user";
+module.exports = function(sequelize, DataTypes){
+    let alias = "User";
     let cols = {
         id:{
             type: DataTypes.INTEGER,
@@ -41,4 +41,3 @@ const usersModel = function(sequelize, DataTypes){
 
     return user;
 }
-module.exports = usersModel
