@@ -1,18 +1,26 @@
 const {body} = require('express-validator');
-const User = require('../models/Users.model');
+const db = require("../database/models/index");
 
 
 
 const email = body('email')
 .notEmpty().withMessage('Campo obligatorio!').bail()
-.isEmail().withMessage('Correo electronico no valido')
+.isEmail().withMessage('Correo electronico no valido').bail()
 .custom((value, {req}) => {
-    let userInDB = User.findByEmail(req.body.email);
+    db.User.findAll({
+        where:{
+            email:req.body.email
+        }
+    }).then((result)=>{
+        if (result > 0){
+            throw new Error('Este email ya esta registrado')
+        }
+    }).catch((err)=>{
+        console.log(err)
+    })
 
-    if (userInDB){
-        throw new Error('Este email ya esta registrado')
-    }
     return true
+
 }); 
 
 const password = body('password').notEmpty().withMessage('Campo obligatorio!'); 

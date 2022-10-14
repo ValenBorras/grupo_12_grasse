@@ -1,5 +1,5 @@
-const postModel = function(sequelize, DataTypes){
-    let alias = "post";
+module.exports = function(sequelize, DataTypes){
+    let alias = "Post";
     let cols ={
         id:{
             type: DataTypes.INTEGER,

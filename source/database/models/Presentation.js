@@ -1,5 +1,5 @@
-const PresentationModel = function(sequelize, DataTypes){
-    let alias = "presentation";
+module.exports = function(sequelize, DataTypes){
+    let alias = "Presentation";
     let cols = {
         id:{
             type: DataTypes.INTEGER,
@@ -18,9 +18,9 @@ let config = {
 const presentation = sequelize.define(alias, cols, config);
 
 presentation.associate = function(models){
-    presentation.hasMany(models.product, {
+    presentation.hasMany(models.Product, {
         as: "products",
-        foreignKey: presentation_id
+        foreignKey: 'presentation_id'
     });
 }
 

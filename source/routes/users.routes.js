@@ -1,6 +1,6 @@
 const {Router} = require("express");
 const router = Router();
-const controller = require('../controllers/users.controller');
+const controller = require('../controllers/usersController');
 const validationsRegister = require('../validations/register');
 const validationsLogin = require('../validations/login');
 const guestMiddleware = require('../middlewares/guest.middleware');
@@ -20,7 +20,7 @@ router.post('/registro', upload.single('img'), validationsRegister, controller.p
 
 router.get('/ingreso', guestMiddleware, controller.login); // vista login
 
-router.post('/ingreso', controller.loginProcess); //procesar login
+router.post('/ingreso', validationsLogin, controller.loginProcess); //procesar login
 
 router.get('/perfil', authMiddleware, controller.profile); // perfil de usuario
 
