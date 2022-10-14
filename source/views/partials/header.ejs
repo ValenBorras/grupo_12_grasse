@@ -1,81 +1,94 @@
 <header>
+    <div class="container-barra-inicio">
+        <h3 class="encabezado">¿Primera Compra? Recibe el <b>ENVIO GRATIS</b> <i class="fa-solid fa-truck-fast"></i> por compras en la plataforma con el cupón: <b>BIENVENIDO</b> <i class="fa-solid fa-heart"></i></h3>
+        
+        <nav class="barra-inicio-mobile">
 
-    <h3 class="encabezado">¿Primera Compra? Recibe el <b>ENVIO GRATIS</b> <i class="fa-solid fa-truck-fast"></i> por compras en la plataforma con el cupón: <b>BIENVENIDO</b> <i class="fa-solid fa-heart"></i></h3>
-    
-    <nav class="barra-inicio-mobile">
-
-        <section class="menu-block">
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </section>
-       
-        <div class="logo-block-mobile">
-            <a href="/"><img class="logo" src="/images/logo-grasse-blanco.png" alt=""></a>
-        </div>
-
-        <section class="carrito">
-            <p class="circulo">0</p><a href="/carrito"><i class="fa-solid fa-bag-shopping"></i></a>   
-        </section> 
-    </nav>
-
-    <nav class="barra-inicio">
-
-        <form class="busqueda" action="/" method="GET"> 
-            <label for="barra-busqueda"></label>
-            <input class="barra-busqueda" type="text" placeholder="">
-        </form> 
-
-        <ul class="site">
-
-            <li><a href="/">HOME </a></li> 
-            <li><a href="/#tienda">TIENDA</a></li> 
-            <li><a href="/testimonios">TESTIMONIOS</a></li>  
-
-            <div class="logo-block">
-            <li><img class="logo" src="/images/logo-grasse-blanco.png" alt=""></li>
+            <section class="menu-block">
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        
+            <div class="logo-block-mobile">
+                <a href="/"><img class="logo" src="/images/logo-grasse-blanco.png" alt=""></a>
             </div>
 
-            <li><a href="/blog">BLOG</a></li>
-            <li><a href="">CONTACTO</a></li>
-            <li><a href="/preguntas">FAQ´S</a></li>
+            <section class="carrito">
+                <p class="circulo">0</p><a href="/carrito"><i class="fa-solid fa-bag-shopping"></i></a>   
+            </section> 
+        </nav>
 
-        </ul>
+        <nav class="barra-inicio">
 
-    
-        <div class="login-navbar">
-            <% if (locals.isLogged) { %>
-                <li class="user">
-                    <i class="fa-solid fa-circle-user"></i>
-                    <p class="p-user"><%= locals.userLogged.name %> </p>
-                    <ul class="ul-user">
-                        <li><a href="/perfil">Perfil</a></li>
-                        <li><a href="/salir">Salir</a></li>
-                    </ul>
-                </li>
-                <% if (!locals.userLogged.email.includes("@grasse.com.co")) { %>
-                 <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
-                <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
-                <% } %>
+            <section class="area-1">
+                <button class="button-icon-mostrar"><i class="fa-solid fa-magnifying-glass" id="buttonIconMostrar"></i></button>
+                <button class="button-icon-ocultar"><i class="fa-solid fa-magnifying-glass" id="buttonIconOcultar"></i></button>
+                <a href="/#distribuidor"><button class="btn-distribuidor">Quiero ser distribuidor</button></a>
+            </section>
             
-                <% if (locals.userLogged.email.includes("@grasse.com.co")) { %>
+            
+            <ul class="site">
 
-                 <li class="desplegable"><i class="fa-solid fa-circle-plus"></i>
-                    <ul class="ul-add">
-                        <li><a href="/crearproducto">Crear Producto</a></li>
-                        <li><a href="/">Crear Post</a></li>
-                    </ul>
-                </li>
-                <% } %>
-                
-            <% } else { %>
-                <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li> 
-                <li><a href="/ingreso"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href="/registro"><i class="fa-solid fa-address-card"></i></a></li>
-                
-            <% } %> 
+                <li><a href="/">HOME </a></li> 
+                <li><a href="/#tienda">TIENDA</a></li> 
+                <li><a href="/testimonios">TESTIMONIOS</a></li>  
 
+                <div class="logo-block">
+                <li><img class="logo" src="/images/logo-grasse-blanco.png" alt=""></li>
+                </div>
+
+                <li><a href="/blog">BLOG</a></li>
+                <li><a href="">CONTACTO</a></li>
+                <li><a href="/preguntas">FAQ´S</a></li>
+
+            </ul>
+
+        
+            <div class="login-navbar">
+                <% if (locals.isLogged) { %>
+                    <li class="user">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <p class="p-user"><%= locals.userLogged.name %> </p>
+                        <ul class="ul-user">
+                            <li><a href="/perfil">Perfil</a></li>
+                            <li><a href="/salir">Salir</a></li>
+                        </ul>
+                    </li>
+                    <% if (!locals.userLogged.email.includes("@grasse.com.co")) { %>
+                    <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
+                    <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
+                    <% } %>
+                
+                    <% if (locals.userLogged.email.includes("@grasse.com.co")) { %>
+
+                    <li class="desplegable"><i class="fa-solid fa-circle-plus"></i>
+                        <ul class="ul-add">
+                            <li><a href="/crearproducto">Crear Producto</a></li>
+                            <li><a href="/">Crear Post</a></li>
+                        </ul>
+                    </li>
+                    <% } %>
+                    
+                <% } else { %>
+                    <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li> 
+                    <li><a href="/ingreso"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="/registro"><i class="fa-solid fa-address-card"></i></a></li>
+                    
+                <% } %> 
+
+            </div>
+            
+        </nav>  
+        <div class="contenedor-busqueda" id="contenedorBusqueda">
+            <form class="busqueda-form" action="/" method="GET"> 
+                <input class="barra-busqueda-input" type="text" placeholder="¿Qué deseas buscar?">
+            </form> 
         </div>
-
-    </nav>  
+        <div id="cover-ctn-search"></div>
+    
+    </div>
+    
+    <script src="/barraBusqueda.js"></script>
+    
 </header>

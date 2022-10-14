@@ -14,5 +14,13 @@
   "email": "admin@grasse.com.co",
   "password": "$2a$10$SNe14AnpfEZkjtwFk82zvOJkX9zZmLltad1ObYZ5JRLS1m5ie04Uu",
   "img": "img-1663114477099-982303177.png"
+ },
+ {
+  "id": 3,
+  "name": "Susana",
+  "surname": "Cortes",
+  "email": "susana@gmail.com",
+  "password": "$2a$10$r0zOtcIeD9qQjNlsi70gDOsZHh4SFeAs5gL1is05DjDBoeVJTZswO",
+  "img": "img-1665708338016-744406391.jpg"
  }
 ]
