@@ -105,40 +105,34 @@
                         
                     </article>
 
-            <% let crema = products.filter(e => e.category_id === 1); if(crema.length > 0){ %> 
-                <section id=tienda >
-                    <h3 class="title-tienda">Cremas</h3>
-                </section>
-            <article class="caja-tienda-cremas">
-                        <% crema.forEach(element => { %> 
+                    <% let crema = products.filter(e => e.category_id === 1); if(crema.length > 0){ %> 
+                        
+                    <article class="caja-tienda-cremas">
+                                <% crema.forEach(element => { %> 
+                                    <%- include('./partials/product.ejs',{element:element})  %> 
+                                <% }) %>
+                    </article>
+                    <% } %>
+
+                    <% let perfumes = products.filter(e => e.category_id === 2); if(perfumes.length > 0){ %> 
+            
+                    <article class="caja-tienda-perfumes">
+                                <% perfumes.forEach(element => { %> 
+                                    <%- include('./partials/product.ejs',{element:element})  %> 
+                                <% }) %>
+                    </article>
+                    <% } %>
+
+                    <% let kits = products.filter(e => e.category_id === 3); if(kits.length > 0){ %> 
+                        
+                    <article class="caja-tienda-kits">
+                        <% kits.forEach(element => { %> 
                             <%- include('./partials/product.ejs',{element:element})  %> 
                         <% }) %>
-            </article>
-            <% } %>
-
-            <% let perfumes = products.filter(e => e.category_id == 2); if(perfumes.length > 0){ %> 
-                <section id=tienda >
-                    <h3 class="title-tienda">Perfumes</h3>
-                </section>
-            <article class="caja-tienda-perfumes">
-                        <% perfumes.forEach(element => { %> 
-                            <%- include('./partials/product.ejs',{element:element})  %> 
-                        <% }) %>
-            </article>
-            <% } %>
-
-            <% let kits = products.filter(e => e.category_id == 3); if(kits.length > 0){ %> 
-                <section id=tienda >
-                    <h3 class="title-tienda">Kits</h3>
-                </section>
-            <article class="caja-tienda-kits">
-                <% kits.forEach(element => { %> 
-                    <%- include('./partials/product.ejs',{element:element})  %> 
-                <% }) %>
-            </article>
-            <% } %>
-
-
+                    </article>
+                    <% } %>
+                </div>
+            </section>
             <section class="section-catalogo">
                 <div class="caja-catalogo">
                     <a href="https://drive.google.com/file/d/1u3ROkwFHR1cQQgaunmGLwZ4s1nydGG2H/view?usp=sharing" target="_blank">Catálogo de fragancias disponibles</a>

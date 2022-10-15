@@ -21,7 +21,6 @@
 
         <nav class="barra-inicio">
 
-<<<<<<< HEAD
             <section class="area-1">
                 <button class="button-icon-mostrar"><i class="fa-solid fa-magnifying-glass" id="buttonIconMostrar"></i></button>
                 <button class="button-icon-ocultar"><i class="fa-solid fa-magnifying-glass" id="buttonIconOcultar"></i></button>
@@ -30,26 +29,6 @@
             
             
             <ul class="site">
-=======
-    
-        <div class="login-navbar">
-            <% if (locals.isLogged) { %>
-                <li class="user">
-                    <i class="fa-solid fa-circle-user"></i>
-                    <p class="p-user"><%= locals.userLogged.name %> </p>
-                    <ul class="ul-user">
-                        <li><a href="/perfil">Perfil</a></li>
-                        <li><a href="/salir">Salir</a></li>
-                    </ul>
-                </li>
-
-                <% if (locals.userLogged.admin == 0) { %>
-                 <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
-                <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
-                <% } %>
-            
-                <% if (locals.userLogged.admin == 1) { %>
->>>>>>> e179f0027283488d637f6e9ece69aa8373106557
 
                 <li><a href="/">HOME </a></li> 
                 <li><a href="/#tienda">TIENDA</a></li> 
@@ -76,13 +55,12 @@
                             <li><a href="/salir">Salir</a></li>
                         </ul>
                     </li>
-                    <% if (!locals.userLogged.email.includes("@grasse.com.co")) { %>
+                    <% if (locals.userLogged.email.includes("@grasse.com.co")) { %>
                     <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
                     <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
                     <% } %>
                 
                     <% if (locals.userLogged.email.includes("@grasse.com.co")) { %>
-
                     <li class="desplegable"><i class="fa-solid fa-circle-plus"></i>
                         <ul class="ul-add">
                             <li><a href="/crearproducto">Crear Producto</a></li>
