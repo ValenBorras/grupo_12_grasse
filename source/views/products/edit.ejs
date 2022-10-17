@@ -24,15 +24,15 @@
                 <legend for="category" class="label-forms">Categoría</legend>
                 <div class="bloque-radio">                    
                     <label for="category-crema" class="radio" >Crema</label>
-                    <input type="radio" name="category" id="category-crema" value="crema" class="radio-option" <%= product.category == 'crema' ? "checked": "" %>>
+                    <input type="radio" name="category" id="category-crema" value="1" class="radio-option" <%= product.category == 'crema' ? "checked": "" %>>
                 </div>
                 <div class="bloque-radio">                    
                     <label for="category-perfume" class="radio">Perfume</label>
-                    <input type="radio" name="category" id="category-perfume" value="perfume" class="radio-option" <%= product.category == 'perfume' ? "checked": "" %>>
+                    <input type="radio" name="category" id="category-perfume" value="2" class="radio-option" <%= product.category == 'perfume' ? "checked": "" %>>
                 </div>
                 <div class="bloque-radio">                    
                     <label for="category-perfume" class="radio">Kit</label>
-                    <input type="radio" name="category" id="category-kit" value="kit" class="radio-option" <%= product.category == 'kit' ? "checked": "" %>>
+                    <input type="radio" name="category" id="category-kit" value="3" class="radio-option" <%= product.category == 'kit' ? "checked": "" %>>
                 </div>
 
 
@@ -43,6 +43,8 @@
                 <input type="text" name="price" id="price" value="<%= (product.price).slice(4) %> " class="login">
 
                 <input type="hidden" name="id" value="<%= product.id %> ">
+                <input type="hidden" name="filename" value="<%= product.img %> ">
+
 
                 <button type="submit" class="button-login">Enviar</button>
             </form>
