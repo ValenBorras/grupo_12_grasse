@@ -41,7 +41,7 @@ module.exports = {
            presentation_id: req.body.presentation,
            price: parseFloat(req.body.price),
            description: req.body.description,
-           img: '/users/' + req.file.filename, 
+           img: '/images/' + req.file.filename, 
         });
 
        res.redirect('/')
