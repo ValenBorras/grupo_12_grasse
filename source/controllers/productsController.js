@@ -66,7 +66,7 @@ module.exports = {
             presentation_id: req.body.presentation,
             price: parseFloat(req.body.price),
             description: req.body.description,
-            //img: req.file ? '/users/' + req.file.filename : '?'
+            img: req.file ? '/users/' + req.file.filename : req.body.filename
         }, 
         {
             where:{id: req.body.id}
