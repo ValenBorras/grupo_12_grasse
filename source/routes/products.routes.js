@@ -1,6 +1,5 @@
 const {Router} = require("express")
 const router = Router()
-//const controller = require("../controllers(old)/products.controller")
 const controller = require("../controllers/productsController")
 
 const upload = require('../middlewares/multer');
