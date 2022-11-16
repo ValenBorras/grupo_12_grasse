@@ -168,7 +168,30 @@ margin-bottom: 15px;
 .password-eye {
     display: flex;
     flex-direction: row;
+    gap: 0;
 }
+
+#checked {
+    font-size: 30px;
+    color: #b68778;
+    margin-bottom: 2rem;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.campoPrecio::-webkit-inner-spin-button,
+.campoPrecio::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.campoPrecio { -moz-appearance:textfield; }
+    
 
 
 .ojitos {
@@ -183,6 +206,17 @@ margin-bottom: 15px;
     bottom: 37%;
     opacity: 0.6;
 }
+
+.errorPresentacion,.errorCategoria, .errorCategory{
+    color: orange;
+}
+
+.campoPrecioProd::-webkit-inner-spin-button,
+.campoPrecioProd::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.campoPrecioProd { -moz-appearance:textfield; }
 
 #ocultar {
     display: none;

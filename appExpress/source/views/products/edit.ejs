@@ -8,43 +8,28 @@
     <%- include ('../partials/header.ejs') %>
     <main>
         <section class="form">
-            <form action="/detalle/editar/:product?m=PUT" method="post"class='login-form'>
+            <form action="/detalle/editar/:product?m=PUT" method="post"class='login-form editProductForm'>
                 <h2 class="copy-login-form">Edicion del Producto: <%=product.name%> </h2>
 
                 <label for="name" class="label-forms">Nombre del producto</label>
-                <input type="text" name="name" id="name" value="<%= product.name %> " class="login">
+                <input type="text" autocomplete="off" name="name" id="name" value="<%= product.name %> " class="login campoNombreProd">
+                <div class="error errorCampoNombreProd"></div>
 
                 <label for="description" class="label-forms">Descripción</label>
-                <input type="text" name="description" id="description" value="<%= product.description %> " class="login">
+                <input type="text" autocomplete="off" name="description" id="description" value="<%= product.description %> " class="login campoDescriptionProd">
+                <div class="error errorCampoDescriptionProd"></div>
 
                 <label for="image" class="label-forms">Imagen</label>
-                <input type="file" name="image" id="image" class="login">
-                
-
-                <legend for="category" class="label-forms">Categoría</legend>
-                <div class="bloque-radio">                    
-                    <label for="category-crema" class="radio" >Crema</label>
-                    <input type="radio" name="category" id="category-crema" value="1" class="radio-option" <%= product.category == 'crema' ? "checked": "" %>>
-                </div>
-                <div class="bloque-radio">                    
-                    <label for="category-perfume" class="radio">Perfume</label>
-                    <input type="radio" name="category" id="category-perfume" value="2" class="radio-option" <%= product.category == 'perfume' ? "checked": "" %>>
-                </div>
-                <div class="bloque-radio">                    
-                    <label for="category-perfume" class="radio">Kit</label>
-                    <input type="radio" name="category" id="category-kit" value="3" class="radio-option" <%= product.category == 'kit' ? "checked": "" %>>
-                </div>
-
-
-                <label for="fragrancies" class="label-forms">Fragancias</label>
-                <input type="text" name="fragrancies" id="fragrancies" value="Valor anterior" class="login">
+                <input type="file" autocomplete="off" name="image" id="image" class="login campoImgProd" value="<%= product.img %>">
+                <i class="fa-solid fa-check" id="checked"></i>
+                <div class="error errorImg">Elija la nueva imagen del producto</div>
 
                 <label for="price" class="label-forms">Precio</label>
-                <input type="text" name="price" id="price" value="<%= (product.price) %> " class="login">
+                <input type="number" autocomplete="off" name="price" id="price" value="<%= product.price %>" class="login campoPrecioProd">
+                <div class="error errorPrecioProd"></div>
+                
 
                 <input type="hidden" name="id" value="<%= product.id %> ">
-                <input type="hidden" name="filename" value="<%= product.img %> ">
-
 
                 <button type="submit" class="button-login">Enviar</button>
             </form>
@@ -52,4 +37,5 @@
     </main>
     <%- include ('../partials/footer.ejs') %> 
 </body>
+<script src="/editProductValidations.js"></script>
 </html>

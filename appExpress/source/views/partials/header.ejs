@@ -30,17 +30,17 @@
             
             <ul class="site">
 
-                <li><a href="/">HOME </a></li> 
-                <li><a href="/#tienda">TIENDA</a></li> 
-                <li><a href="/testimonios">TESTIMONIOS</a></li>  
+                <li class="btn_home"><a href="/">HOME </a></li> 
+                <li class="btn_tienda"><a href="/#tienda">TIENDA</a></li> 
+                <li class="btn_testimonios"><a href="/testimonios">TESTIMONIOS</a></li>  
 
                 <div class="logo-block">
                 <li><img class="logo" src="/images/logo-grasse-blanco.png" alt=""></li>
                 </div>
 
-                <li><a href="/blog">BLOG</a></li>
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="/preguntas">FAQ´S</a></li>
+                <li class="btn_blog"><a href="/blog">BLOG</a></li>
+                <li class="btn_contacto"><a href="">CONTACTO</a></li>
+                <li class="btn_faqs"><a href="/preguntas">FAQ´S</a></li>
 
             </ul>
 
@@ -55,7 +55,7 @@
                             <li><a href="/salir">Salir</a></li>
                         </ul>
                     </li>
-                    <% if (locals.userLogged.email.includes("@grasse.com.co")) { %>
+                    <% if (locals.userLogged) { %>
                     <li><a href="" class="section-navbar"><i class="fa-regular fa-heart"></i> <p class="circulo">0</p></a></li>
                     <li><a href="/carrito" class="section-navbar"><i class="fa-solid fa-bag-shopping"></i> <p class="circulo">0</p></a></li>
                     <% } %>

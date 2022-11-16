@@ -11,7 +11,8 @@
             <form method="POST" action="/ingreso" class="login-form">
                 <h2 class="copy-login-form"> ¡Hola! Para seguir, ingresa tu email y contraseña </h2>
                 <div>
-                   <input type="text" name="email" id="email" class="login" placeholder="Ingresa tu email">
+                   <input type="text" name="email" id="email" class="login inputEmailLogin" autocomplete="off" placeholder="Email" value="">
+                   <div class="error errorEmail"></div>
                     <% if (locals.errors && locals.errors.email){ %>
 
                         <p class="error">
@@ -20,13 +21,14 @@
 
                     <% } %>
                 </div>
-                <div class="input-form-text">
+                <div class="input-form-text" id="contrasenaBlock">
                     <div class="password-eye">
-                        <input type="password" name="password" id="contrase" class="login" placeholder="Contraseña">
-                        <span class="ojitos" onclick="mostrarContra()">
+                        <input type="password" name="password" id="contrase" class="login inputContrasenaLogin" placeholder="Contraseña">
+                        <div class="ojitos" onclick="mostrarContra()">
                             <i id="ocultar" class="fa fa-eye" title="Ocultar contraseña"></i>
                             <i id="mostrar" class="fa fa-eye-slash" title="Mostrar contraseña"></i>
-                        </span>
+                        </div>
+                        <div class="error errorContrasena"></div>
                     </div>    
                     <% if (locals.errors && locals.errors.password){ %>
 
@@ -48,7 +50,7 @@
         </section>
     </main>
     <%- include ('../partials/footer.ejs') %> 
-
+    <script src="/loginValidations.js"></script>
     <!-- js ojo de contraseña-->
     <script>
         function mostrarContra() {

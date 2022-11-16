@@ -8,33 +8,39 @@
     <%- include ('../partials/header.ejs') %>
     <main>
         <section class="form">
-            <form action="/crearproducto" method="POST" class='login-form' enctype="multipart/form-data">
+            <form action="/crearproducto" method="POST" class='login-form createProductForm' enctype="multipart/form-data">
                 <h2 class="copy-login-form">Crear Producto</h2>
 
                 <label for="name" class="label-forms">Nombre del producto</label>
-                <input type="text" name="name" id="name" class="login">
+                <input type="text" name="name" id="name" class="login campoNombreProd" autocomplete="off">
+                <div class="error errorNombreProd"></div>
 
                 <label for="description" class="label-forms">Descripción</label>
-                <input type="text" name="description" id="description" class="login">
+                <input type="text" name="description" id="description" class="login campoDescripcion" autocomplete="off">
+                <div class="error errorDescripcion"></div>
 
                 <label for="img" class="label-forms">Imagen</label>
-                <input type="file" name="img" id="img" class="login">
+                <input type="file" name="img" id="img" class="login campoImagen">
+                <div class="error errorImagen">Sube una imagen de producto jpg o png</div>
+                <i class="fa-solid fa-check" id="checked"></i>
                 
 
                 <legend for="category" class="label-forms">Categoría</legend>
                 <div class="bloque-radio">   
-                    <input type="radio" name="category" id="category-crema" value="1" class="radio-option">
+                    <input type="radio" name="category" id="category-crema" value="1" class="radio-option campoCategoria">
                     <label for="category-crema" class="radio">Crema</label>                 
 
                 </div>
                 <div class="bloque-radio"> 
-                    <input type="radio" name="category" id="category-perfume" value="2" class="radio-option">
+                    <input type="radio" name="category" id="category-perfume" value="2" class="radio-option campoCategoria">
                     <label for="category-perfume" class="radio">Perfume</label>
                 </div>
                 <div class="bloque-radio"> 
-                    <input type="radio" name="category" id="category-kit" value="3" class="radio-option">
+                    <input type="radio" name="category" id="category-kit" value="3" class="radio-option campoCategoria">
                     <label for="category-perfume" class="radio">Kit</label>
                 </div>
+                <div class="error errorCategoria">Elige la categoria del producto</div>
+                
                 <legend for="category" class="label-forms">Presentacion</legend>
                 <div class="bloque-radio">
                     <input type="radio" name="presentation" id="presentation-50ml" value="4" class="radio-option">                    
@@ -60,10 +66,11 @@
                     <input type="radio" name="presentation" id="presentation-100ml-280g" value="5" class="radio-option">
                     <label for="presentation-100ml-280g" class="radio">100ml y 280g</label>
                 </div>
-
+                <div class="error errorPresentacion">Elige la Presentacion del producto</div>
 
                 <label for="price" class="label-forms">Precio</label>
-                <input type="text" name="price" id="price" class="login">
+                <input type="number" name="price" id="price" class="login campoPrecio" autocomplete="off">
+                <div class="error errorPrecio"></div>
 
                 <button type="submit" class="button-login">Enviar</button>
             </form>
@@ -71,4 +78,5 @@
     </main>
     <%- include ('../partials/footer.ejs') %> 
 </body>
+<script src="/createProductValidations.js"></script>
 </html>
