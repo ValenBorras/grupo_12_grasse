@@ -26,4 +26,6 @@ router.get('/perfil', authMiddleware, controller.profile); // perfil de usuario
 
 router.get('/salir', controller.logout); //logout (PENDIENTE POR REALIZAR LA REDIRECCION DESDE VISTA)
 
+router.delete('/eliminar', controller.remove);
+
 module.exports = router;

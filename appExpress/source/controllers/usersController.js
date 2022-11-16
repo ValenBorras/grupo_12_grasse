@@ -71,5 +71,13 @@ module.exports = {
         res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/')
+    },
+
+    remove:(req,res)=>{
+        db.User.destroy({
+            where:{id:req.body.id}
+        }
+        );
+        res.redirect('/')
     }
 }
