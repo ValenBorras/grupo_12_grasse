@@ -7,19 +7,18 @@ const email = body('email')
 .notEmpty().withMessage('Campo obligatorio!').bail()
 .isEmail().withMessage('Correo electronico no valido').bail()
 .custom((value, {req}) => {
-    db.User.findAll({
+  return db.User.findOne({
         where:{
             email:req.body.email
         }
     }).then((result)=>{
-        if (result > 0){
+        if (result){
             throw new Error('Este email ya esta registrado')
         }
     }).catch((err)=>{
-        console.log(err)
+        throw new Error('Este email ya esta registrado')
     })
 
-    return true
 
 }); 
 

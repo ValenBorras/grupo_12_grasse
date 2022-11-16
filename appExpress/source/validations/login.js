@@ -11,7 +11,7 @@ const email = body('email')
             email:req.body.email
         }
     }).then((result)=>{
-        if (result = 0){
+        if (!result){
             throw new Error('Este email no esta registrado')
         }
     }).catch((err)=>{
