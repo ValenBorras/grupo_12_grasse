@@ -1,0 +1,45 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFF;
+    width: 100vw;
+    background-image: url(../../Fondo.png);
+    overflow-x: hidden;
+}
+
+.Panel{
+    background-color: #F1ECE1;
+    border: #A87F70 solid 3px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.SelectorPaneles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.TituloPanel{
+    color: #A87F70;
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+.NumeroPanel{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color:#755846;
+}
+
+.TextoPanel{
+    font-size: 18px;
+    font-weight: 600;
+    color:#755846;
+    margin-right: 15px;
+    list-style: none;
+}
