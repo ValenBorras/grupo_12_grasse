@@ -8,6 +8,10 @@ const userLoggedMiddleware = require("./middlewares/user.logged.middleware");
 server.listen(config.port,config.start());
 const {join} = require('path');
 
+const cors = require('cors')
+
+server.use(cors())
+
 //put y delete
 const method = require('method-override'); 
 
@@ -52,5 +56,4 @@ server.use(require('./routes/Api/productsApi.routes'));
 server.use((req,res,next)=> {
     res.status(404).render("not-found")
 })
-
 
