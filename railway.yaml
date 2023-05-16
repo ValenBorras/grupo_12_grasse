@@ -1,0 +1,10 @@
+name: my-app
+version: 1.0.0
+env:
+  NODE_ENV: production
+build:
+  dockerfile: Dockerfile
+deploy:
+  - name: app
+    command: npm start
+    path: /appExpress/
